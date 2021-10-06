@@ -41,14 +41,38 @@
 <ul>
 <li>Mange måter å gjøre det på
 <ul>
-<li>IFrames -&gt; Spotify</li>
-<li>Module federation -&gt; Et webpack verktøy</li>
-<li>Web-compoents
-<ul>
-<li>Her fokuset vårt skal ligge</li>
-</ul></li>
+<li>IFrames</li>
+<li>Module federation</li>
+<li>Web-compoents</li>
 </ul></li>
 </ul>
+<p>=vertical slide=</p>
+<h2 id="iframes">IFrames</h2>
+<ul>
+<li>Hvorfor, hvorfor ikke</li>
+</ul>
+<p>=vertical slide=</p>
+<h2 id="module-federation">Module federation</h2>
+<ul>
+<li>Fungerte ikke for oss</li>
+</ul>
+<p>=vertical slide=</p>
+<h2 id="web-components">Web Components</h2>
+<p>Faglig om web components</p>
+<p>=vertical slide=</p>
+<h3 id="trenger-ikke-være-mere-enn-dette">Trenger ikke være mere enn dette</h3>
+<p><em>index.html</em></p>
+<pre><code>&lt;script&gt;
+    class MicroFrontendFun extends HTMLElement {
+        constructor() {
+            super();
+            this.innerHTML = &quot;Micro frontends for FTW!&quot;;
+        }
+    }
+    customElements.define(&quot;micro-demo&quot;, MicroFrontendFun);
+&lt;/script&gt;
+
+&lt;micro-demo&gt;&lt;/micro-demo&gt;</code></pre>
 
 </body>
 </html>

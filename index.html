@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <script src="https://klingensmicrodemo.z13.web.core.windows.net/"></script>
+    <script module src="https://klingensmicrodemo.z13.web.core.windows.net/"></script>
     <title>reveal.js</title>
 
     <link rel="stylesheet" href="dist/reset.css" />
@@ -51,7 +51,35 @@
           data-charset="utf8"
         >
             <h1>Weather app</h1>
-            <yr-ekstra></yr-ekstra>
+            <yr-extra></yr-extra>
+        </section>
+        <section
+          data-separator="^=new slide="
+          data-separator-vertical="^=vertical slide="
+          data-separator-notes="^Note:"
+          data-charset="utf8"
+        >
+            <!-- Mini demo av basic web component -->
+            <h3>Trenger ikke være mere enn dette</h3>
+            <p>index.html</p>
+            <pre>
+<code>
+  &lt;script>
+      class MicroFrontendFun extends HTMLElement {
+          constructor() {
+              super();
+              this.innerHTML = "Micro frontends for FTW!";
+          }
+      }
+      customElements.define("micro-demo", MicroFrontendFun);
+   console.log("NEI NEI NEI");
+  &lt;/script>
+</code>
+            </pre>
+            <button id="test-button">TEST</button>
+            <script type="text/javascript">
+             const buttonElement = document.getElementById("test-button");
+            </script>
         </section>
       </div>
     </div>

@@ -27,7 +27,44 @@
 ## Frontend
 
 - Mange måter å gjøre det på
-  - IFrames -> Spotify
-  - Module federation -> Et webpack verktøy
+  - IFrames
+  - Module federation
   - Web-compoents
-    - Her fokuset vårt skal ligge
+
+=vertical slide=
+
+## IFrames
+
+- Hvorfor, hvorfor ikke
+
+=vertical slide=
+
+## Module federation
+
+- Fungerte ikke for oss
+
+=vertical slide=
+
+## Web Components
+
+Faglig om web components
+
+=vertical slide=
+
+### Trenger ikke være mere enn dette
+
+_index.html_
+
+```
+<script>
+    class MicroFrontendFun extends HTMLElement {
+        constructor() {
+            super();
+            this.innerHTML = "Micro frontends for FTW!";
+        }
+    }
+    customElements.define("micro-demo", MicroFrontendFun);
+</script>
+
+<micro-demo></micro-demo>
+```
