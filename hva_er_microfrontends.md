@@ -1,27 +1,55 @@
-# Hva er microfrontends (15 min) -> Truls
+<!-- .slide: data-background-image="./2.jpg" -->
+
+# Hva er microfrontends
+
+=new slide=
 
 Å skalere frontend utvikling slik at mange team kan jobbe sammen om ett stort og komplekst produkt.
 
 Altså er det overordnede målet med microfrontends et organisatorisk problem. Et team med utviklere har en maks størrelse før 1 ekstra utvikler ikke lenger betyr 1 ekstra produksjon.
 
+Note:
+dette er noen bra notater
+sykt bra notater
+med ekstra bra notater på
+
+=new slide=
+
+<!-- .slide: data-background="#FFF" -->
+
 Det er flere grunner til dette. De problemene microfrontends prøver å løse er:
+
+````js [1-2|3|4]
+let a = 1;
+let b = 2;
+let c = x => 1 + 2 + x;
+c(3);
+```
+
+=new slide=
+
+- Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
+- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 
 - Bytte ut stor og komplekse kodebaser med mere håndterbare størrelser
 - En mere skalerbare organisasjon via løsrevne autonome team
 - Oppgradering og oppdatering av avhengigheter uten å påvirke mange andre
 - Lettere refaktorering på en mere incrementell måte
 
+=new slide=
+
 Som dere helt sikkert begynner å se så har dette både fordeler og ulemper:
 
 - Duplikasjon av avhengigheter ( React, Vue, Angular )
 - Flere må løse de samme problemene hver for seg.
 - Brukere må laste ned den samme koden flere ganger i samme app.
-- 
+
+=new slide=
 
 Men flere og flere rapporterer signifikante fordeler som har latt team skalere levereanser av uavhengig publiserte og videreutviklede løsninger.
 
 ## Så hva må vi som utviklere passe på for å ikke ødelegger for denne strategien.
-
 
 ## Fordeler
 
@@ -61,8 +89,7 @@ TODO: Skrive om autonome team og fordelen og ulempene med det.
 Vær microfronend kan publiseres vær for seg. Dette reduserer størrelsen på endringen i vær publisering og reduserer risikoen for feil. Det blir også typisk mindre tid mellom publiseringen. Altså blir det kortere tid fra en utvikler jobbet med koden til man finner ut at det var noen galt. Når det er kort tid siden du utviklet noe så er det mye lettere å sette seg inn i koden igjen og rasker å fikse feilen.
 
 - Ingen flere felles bilioteker
-- 
-  - Hvorfor
+- - Hvorfor
   - Does and donts
     - Hvordan høste fordelene
 
@@ -70,3 +97,5 @@ Vær microfronend kan publiseres vær for seg. Dette reduserer størrelsen på e
 
 - [ ] Sjekke om State of devops har noen på microfrontends
 - [ ] Sjekke om det finnes flere publikasjoner med gode rykter som sier att dette funker
+- [ ] TODO item
+````
