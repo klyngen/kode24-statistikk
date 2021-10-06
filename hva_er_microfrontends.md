@@ -1,4 +1,4 @@
-<!-- .slide: data-background-image="./2.jpg" -->
+<!-- .slide: data-background-image="./4.jpg" -->
 
 # Hva er microfrontends
 

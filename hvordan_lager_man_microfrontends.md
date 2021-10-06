@@ -5,6 +5,8 @@
   - Rending i backend
   - Man kan selvfølgelig blande disse
 
+=vertical slide=
+
 ## Backend
 
 [God kilde til serverside. Blander til og med inn Web-Components](https://micro-frontends.org/)
@@ -19,6 +21,8 @@
  <!--#include virtual="/code_from_team2" -->
  <!--#include virtual="/code_from_team3" -->
 ```
+
+=vertical slide=
 
 ## Frontend
 
