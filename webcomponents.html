@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>webcomponents.html</title>
+<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8"/>
+<link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css"  />
+<link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/github.min.css"  /><meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'><style> body { box-sizing: border-box; max-width: 740px; width: 100%; margin: 40px auto; padding: 0 10px; } </style><script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script><script src='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js'></script><script>document.addEventListener('DOMContentLoaded', () => { document.body.classList.add('markdown-body'); document.querySelectorAll('pre[lang] > code').forEach((code) => { code.classList.add(code.parentElement.lang); }); document.querySelectorAll('pre > code').forEach((code) => { hljs.highlightBlock(code); }); });</script>
+</head>
+
+<body>
+
+<h1 id="webcomponents">WebComponents</h1>
+<h2 id="er-dette-egentlig-en-ny-greie">Er dette egentlig en ny greie?</h2>
+<ul>
+<li>En drøm som har eksistert lenge</li>
+<li>Microsoft, Mozilla 1998, 2001
+<ul>
+<li>Ønske om å kunne utvide DOM-elementer</li>
+<li>Mozilla kom med XBL</li>
+</ul></li>
+</ul>
+<p>Skal vi ha med XBL graf? <a href="https://bgrins.github.io/xbl-analysis/graph/">XBL-gra fra Mozilla</a></p>
+<p>=vertical slide=</p>
+<h2 id="hva-er-det-egentlig">Hva er det egentlig</h2>
+<ul>
+<li><p>I din nettleser så er det implementert en del specs</p>
+<ul>
+<li>Custom-elements</li>
+<li>Shadow-Dom</li>
+<li>ES-moduler</li>
+<li>HTML-templates</li>
+</ul></li>
+<li><p>De gir oss muligheten til å lage egne tags</p>
+<ul>
+<li>Forstått av alle moderne nettlesere + skrap om man inkluderer polyfills</li>
+<li>Enkapsulering med shadow-dom</li>
+<li>Fungerer godt sammen med javascript-rammeverk</li>
+<li>Kan lages med de fleste rammeverk</li>
+</ul></li>
+</ul>
+<p>=vertical slide=</p>
+<h2 id="trenger-ikke-være-mere-enn-dette">Trenger ikke være mere enn dette</h2>
+<pre><code>&lt;script&gt;
+
+    // Extend et eksisterende element
+    class MicroFrontendFun extends HTMLElement {
+        constructor() {
+            super();
+            this.innerHTML = &quot;Micro frontends for FTW!&quot;;
+        }
+    }
+
+    // Si til nettleseren at vi har definert et element
+    customElements.define(&#39;micro-frontend-er-artig&#39;, MicroFrontendFun);
+
+&lt;/script&gt;
+
+
+
+// Bruk element
+&lt;micro-frontend-er-artig&gt;&lt;/micro-frontend-er-artig&gt;</code></pre>
+<p>=vertical slide=</p>
+<ul>
+<li>Man vil jo fjerne ha litt mere støtte når man utvikler</li>
+<li>Biblioteker finnes
+<ul>
+<li>Stencil</li>
+<li>Lit</li>
+<li>React, Vue eller Angular om man vil</li>
+<li>Komfort === binding =vertical slide=</li>
+</ul></li>
+</ul>
+<h2 id="gotchas">Gotchas</h2>
+<ul>
+<li><p>document.getElementById() === NEI</p></li>
+<li><p>:root :host…..</p></li>
+<li><p>Webpack all the things?</p></li>
+</ul>
+
+</body>
+</html>

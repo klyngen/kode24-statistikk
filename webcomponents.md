@@ -10,6 +10,8 @@
 Skal vi ha med XBL graf?
 [XBL-gra fra Mozilla](https://bgrins.github.io/xbl-analysis/graph/)
 
+=vertical slide=
+
 ## Hva er det egentlig
 
 - I din nettleser så er det implementert en del specs
@@ -26,7 +28,9 @@ Skal vi ha med XBL graf?
   - Fungerer godt sammen med javascript-rammeverk
   - Kan lages med de fleste rammeverk
 
-Den enkleste implementasjonen ser slik ut:
+=vertical slide=
+
+## Trenger ikke være mere enn dette
 
 ```
 <script>
@@ -50,12 +54,15 @@ Den enkleste implementasjonen ser slik ut:
 <micro-frontend-er-artig></micro-frontend-er-artig>
 ```
 
+=vertical slide=
+
 - Man vil jo fjerne ha litt mere støtte når man utvikler
 - Biblioteker finnes
   - Stencil
   - Lit
   - React, Vue eller Angular om man vil
   - Komfort === binding
+    =vertical slide=
 
 ## Gotchas
 
