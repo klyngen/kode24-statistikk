@@ -2,9 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-    <script module src="https://klingensmicrodemo.z13.web.core.windows.net/"></script>
+    <script
+      module
+      src="https://klingensmicrodemo.z13.web.core.windows.net/"
+    ></script>
     <title>reveal.js</title>
 
     <link rel="stylesheet" href="dist/reset.css" />
@@ -17,71 +23,88 @@
   <body>
     <div class="reveal">
       <div class="slides">
-          <!-- INTRODUKSJON -->
+        <!-- INTRODUKSJON -->
         <section
-        data-separator-notes="^Note:Vi skal ta lytteren med på en vei frem til et lykkelig liv med micro-frontends"
-        data-charset="utf8"
-        data-background-image="./3.jpg"
+          data-separator-notes="^Note:Vi skal ta lytteren med på en vei frem til et lykkelig liv med micro-frontends"
+          data-charset="utf8"
+          data-background-image="./3.jpg"
         >
-            <section>
-                <h1 class="r-fit-text">Veien til Micro-Frontends</h1>
-                <em class="r-fit-text">Med Truls Aagaard og Martin Klingenberg</em>
+          <section>
+            <h1 class="r-fit-text">Veien til Micro-Frontends</h1>
+            <em class="r-fit-text">Med Truls Aagaard og Martin Klingenberg</em>
+          </section>
+          <section
+            data-markdown="introduksjon.md"
+            data-separator="^=new slide="
+            data-separator-vertical="^=vertical slide="
+            data-separator-notes="^Note:"
+            data-charset="utf8"
+          ></section>
+          <section>
+            <h2 class="r-fit-text">
+              Hvorfor skal man bry seg om micro-frontends?
+            </h2>
+            <!-- Her snakker vi bare rundt det som er skrevet i hva_er_microfrontends.md -->
+            <section tagcloud>
+              <!-- prettier-ignore  -->
+              Skalerbarhet
+              React
+              Angular
+              Vue
+              Uavhengig publisering
+              Autonome team
+              Små kodebaser
+              Spennende
+              Enkel refaktorering
+              Moderne
+              Hastighet
             </section>
-            <section>
-                <h2 class="r-fit-text">Hvorfor skal dere høre på oss?</h2>
-                <p>TODO: Kan vi ting?</p>
-            </section>
-            <section>
-                <h2>Hva er MicroFrontends?</h2>
-                <p>Bit av en frontend, publisert uavhengig av en plattform</p>
-            </section>
-            <section>
-                <h3>Hvorfor skal man bry seg om micro-frontends?</h3>
-                <!-- Her snakker vi bare rundt det som er skrevet i hva_er_microfrontends.md -->
-                <section tagcloud>
-                    Angular
-                    Vue
-                    Uavhengig publisering
-                    Autonome team
-                    Små kodebaser
-                    Spennende
-                    Enkel refaktorering
-                    Moderne
-                    Hastighet
-                </section>
-            </section>
-            <section>
-                <h3>Veien til Microfrontends er smal, og det er lett å falle utenfor</h3>
-            </section>
+          </section>
+          <section>
+            <h3>
+              Veien til Microfrontends er smal, og det er lett å falle utenfor
+            </h3>
+          </section>
         </section>
 
-        <section
-            data-background-image="./2.jpg"
-        >
-            <section>
-              <h1>Velg teknologisk retning</h1>
-              <p class="r-fit-text">Frontend, Backend eller Begge?</p>
-            </section>
-            <section>
-                <h2>Backend</h2>
-                <ul>
-                    <li><b>S</b>erver <b>S</b>ide <b>I</b>ncludes</li>
-                    <li>Build time composition</li>
-                </ul>
-                    <pre>
+        <section data-background-image="./2.jpg">
+          <section>
+            <h1>Velg teknologisk retning</h1>
+            <p class="r-fit-text">Frontend, Backend eller Begge?</p>
+          </section>
+          <section>
+            <h2>Backend</h2>
+            <ul>
+              <li><b>S</b>erver <b>S</b>ide <b>I</b>ncludes</li>
+              <li>Build time composition</li>
+            </ul>
+            <pre>
                         <code >
   <!--#include virtual="/team1_app" -->
   <!--#include virtual="/team2_app" -->
   <!--#include virtual="/team3_app" -->
                         </code>
                     </pre>
-            </section>
-            <section>
-                <h2>Frontend veien</h2>
+          </section>
+          <section>
+            <h2>Frontend veien</h2>
+            <ul>
+              <li>IFrames</li>
+              <li>WebComponents</li>
+              <li>Rein Javascript</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="r-fit-text">IFrames!? Er du seriøs!?</h3>
+            <div class="r-stack">
+              <h1 class="fragment fade-in-then-out r-fit-text">Ja</h1>
+              <div class="fragment fade-in-then-out">
+                <h5 class="r-fit-text">Pros</h5>
                 <ul>
-                    <li>IFrames</li>
-                    <li>WebComponents</li>
-                    <li>Rein Javascript</li>
+                  <li>Spotify bruker IFrames</li>
+                  <li>Enkelt</li>
+                  <li>Utprøvd</li>
+                  <li>Utrolig god enkapsulering</li>
                 </ul>
             </section>
             <section>
@@ -137,23 +160,29 @@
           data-separator-vertical="^=vertical slide="
           data-separator-notes="^Note:"
           data-charset="utf8"
-        >
-        </section>
+        ></section>
         <section
           data-markdown="hvordan_lager_man_microfrontends.md"
           data-separator="^=new slide="
           data-separator-vertical="^=vertical slide="
           data-separator-notes="^Note:"
           data-charset="utf8"
-        >
-        </section>
+        ></section>
         <section
           data-markdown="webcomponents.md"
           data-separator="^=new slide="
           data-separator-vertical="^=vertical slide="
           data-separator-notes="^Note:"
           data-charset="utf8"
+        ></section>
+        <section
+          data-separator="^=new slide="
+          data-separator-vertical="^=vertical slide="
+          data-separator-notes="^Note:"
+          data-charset="utf8"
         >
+          <h1>Weather app</h1>
+          <yr-extra></yr-extra>
         </section>
         <section
           data-separator="^=new slide="
@@ -161,19 +190,10 @@
           data-separator-notes="^Note:"
           data-charset="utf8"
         >
-            <h1>Weather app</h1>
-            <yr-extra></yr-extra>
-        </section>
-        <section
-          data-separator="^=new slide="
-          data-separator-vertical="^=vertical slide="
-          data-separator-notes="^Note:"
-          data-charset="utf8"
-        >
-            <!-- Mini demo av basic web component -->
-            <h3>Trenger ikke være mere enn dette</h3>
-            <p>index.html</p>
-            <pre>
+          <!-- Mini demo av basic web component -->
+          <h3>Trenger ikke være mere enn dette</h3>
+          <p>index.html</p>
+          <pre>
 <code>
   &lt;script>
       class MicroFrontendFun extends HTMLElement {
@@ -187,10 +207,10 @@
   &lt;/script>
 </code>
             </pre>
-            <button id="test-button">TEST</button>
-            <script type="text/javascript">
-             const buttonElement = document.getElementById("test-button");
-            </script>
+          <button id="test-button">TEST</button>
+          <script type="text/javascript">
+            const buttonElement = document.getElementById("test-button");
+          </script>
         </section>
       </div>
     </div>
@@ -207,14 +227,15 @@
         hash: true,
 
         // Learn about plugins: https://revealjs.com/plugins/
-          plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-          dependencies: [
-            { src: 'plugin/tagcloud/tagcloud.js', async: true }
-          ]
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        dependencies: [{ src: "plugin/tagcloud/tagcloud.js", async: true }],
       });
     </script>
     <div class="alvlogo">
-        <embed src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjYsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxOTkuMTggMTE0LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE5OS4xOCAxMTQuNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6dXJsKCNTVkdJRF8xXyk7fQ0KCS5zdDF7ZmlsbDp1cmwoI1NWR0lEXzJfKTt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfMV8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iNDMuMjM4OCIgeTE9IjY5LjE2ODYiIHgyPSIxMjkuNjk2OCIgeTI9IjQ0LjYyNCI+DQoJCTxzdG9wICBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkZGRkYiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC4yMzk0IiBzdHlsZT0ic3RvcC1jb2xvcjojRkRGREZEO3N0b3Atb3BhY2l0eTowLjk1NTIiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC4zNTciIHN0eWxlPSJzdG9wLWNvbG9yOiNGNUY1RjU7c3RvcC1vcGFjaXR5OjAuOTMzMiIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjQ0ODEiIHN0eWxlPSJzdG9wLWNvbG9yOiNFOEU4RTg7c3RvcC1vcGFjaXR5OjAuOTE2MSIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjUyNTUiIHN0eWxlPSJzdG9wLWNvbG9yOiNENUQ1RDU7c3RvcC1vcGFjaXR5OjAuOTAxNiIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjU5NDMiIHN0eWxlPSJzdG9wLWNvbG9yOiNCREJEQkQ7c3RvcC1vcGFjaXR5OjAuODg4NyIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjY1NyIgc3R5bGU9InN0b3AtY29sb3I6IzlGOUY5RjtzdG9wLW9wYWNpdHk6MC44NzciLz4NCgkJPHN0b3AgIG9mZnNldD0iMC43MTUxIiBzdHlsZT0ic3RvcC1jb2xvcjojN0M3QzdDO3N0b3Atb3BhY2l0eTowLjg2NjEiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC43Njk1IiBzdHlsZT0ic3RvcC1jb2xvcjojNTI1MjUyO3N0b3Atb3BhY2l0eTowLjg1NTkiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC44MTkiIHN0eWxlPSJzdG9wLWNvbG9yOiMyNTI1MjU7c3RvcC1vcGFjaXR5OjAuODQ2NiIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjg1NDUiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDAwMDA7c3RvcC1vcGFjaXR5OjAuODQiLz4NCgk8L2xpbmVhckdyYWRpZW50Pg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzAuNDEsMTE0LjM2Yy0zLjI2LTkuNTYtNi41My0xOS4xMS05Ljc5LTI4LjY3Yy03LDAtMTQtMC4wMS0yMS0wLjAxQzg5LjksNTcuMTIsODAuMTgsMjguNTYsNzAuNDYsMA0KCQlDNjAuNDksMCw1MC41MSwwLDQwLjU0LDBjMTMuMDIsMzguMTMsMjYuMDUsNzYuMjcsMzkuMDcsMTE0LjRDOTYuNTQsMTE0LjM4LDExMy40OCwxMTQuMzcsMTMwLjQxLDExNC4zNnoiLz4NCgk8bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzJfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjE3LjgxODIiIHkxPSI1OC44OTM2IiB4Mj0iODUuMjcxMiIgeTI9IjUxLjkzMTUiPg0KCQk8c3RvcCAgb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojRkZGRkZGIi8+DQoJCTxzdG9wICBvZmZzZXQ9IjAuMDcyOCIgc3R5bGU9InN0b3AtY29sb3I6I0Y5RjlGOTtzdG9wLW9wYWNpdHk6MC45ODU0Ii8+DQoJCTxzdG9wICBvZmZzZXQ9IjAuMTczIiBzdHlsZT0ic3RvcC1jb2xvcjojRTdFN0U3O3N0b3Atb3BhY2l0eTowLjk2NTIiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC4yODkyIiBzdHlsZT0ic3RvcC1jb2xvcjojQ0FDQUNBO3N0b3Atb3BhY2l0eTowLjk0MTkiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC40MTc0IiBzdHlsZT0ic3RvcC1jb2xvcjojQTFBMUExO3N0b3Atb3BhY2l0eTowLjkxNjIiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC41NTU0IiBzdHlsZT0ic3RvcC1jb2xvcjojNkQ2RDZEO3N0b3Atb3BhY2l0eTowLjg4ODQiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC42OTkzIiBzdHlsZT0ic3RvcC1jb2xvcjojMkYyRjJGO3N0b3Atb3BhY2l0eTowLjg1OTUiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC43OTY1IiBzdHlsZT0ic3RvcC1jb2xvcjojMDAwMDAwO3N0b3Atb3BhY2l0eTowLjg0Ii8+DQoJPC9saW5lYXJHcmFkaWVudD4NCgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNDAuNTQsMGMtMC41MywwLTEuMDcsMC0xLjYsMEMyNS45NiwzOC4xMywxMi45OCw3Ni4yNiwwLDExNC4zOGM5Ljk0LDAsMTkuODctMC4wMSwyOS44MS0wLjAxDQoJCWMzLjkzLTExLjUxLDcuODYtMjMuMDMsMTEuNzktMzQuNTRjOC43MywwLDE3LjQ3LDAsMjYuMjEtMC4wMUM1OC43Miw1My4yMiw0OS42MywyNi42MSw0MC41NCwweiIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xOTkuMTgtMC4wMkMxODkuMTktMC4wMSwxNzkuMiwwLDE2OS4yMSwwYy03Ljk5LDIzLjQ3LTE1Ljk4LDQ2Ljk0LTIzLjk3LDcwLjQyDQoJCUMxMzcuMjQsNDYuOTUsMTI5LjI1LDIzLjQ3LDEyMS4yNiwwYy05Ljk4LDAtMTkuOTcsMC0yOS45NSwwYzEzLjA0LDM4LjEzLDI2LjA4LDc2LjI3LDM5LjEzLDExNC40DQoJCWM5Ljg5LTAuMDEsMTkuNzgtMC4wMSwyOS42Ny0wLjAyYzMuMzctOS43OCw2Ljc1LTE5LjU2LDEwLjEyLTI5LjM0aC0wLjA5QzE3OS44MSw1Ni42OCwxODkuNSwyOC4zMywxOTkuMTgtMC4wMnoiLz4NCjwvZz4NCjwvc3ZnPg0K" alt="Alv logo" />
+      <embed
+        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjYsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxOTkuMTggMTE0LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE5OS4xOCAxMTQuNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6dXJsKCNTVkdJRF8xXyk7fQ0KCS5zdDF7ZmlsbDp1cmwoI1NWR0lEXzJfKTt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfMV8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iNDMuMjM4OCIgeTE9IjY5LjE2ODYiIHgyPSIxMjkuNjk2OCIgeTI9IjQ0LjYyNCI+DQoJCTxzdG9wICBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkZGRkYiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC4yMzk0IiBzdHlsZT0ic3RvcC1jb2xvcjojRkRGREZEO3N0b3Atb3BhY2l0eTowLjk1NTIiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC4zNTciIHN0eWxlPSJzdG9wLWNvbG9yOiNGNUY1RjU7c3RvcC1vcGFjaXR5OjAuOTMzMiIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjQ0ODEiIHN0eWxlPSJzdG9wLWNvbG9yOiNFOEU4RTg7c3RvcC1vcGFjaXR5OjAuOTE2MSIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjUyNTUiIHN0eWxlPSJzdG9wLWNvbG9yOiNENUQ1RDU7c3RvcC1vcGFjaXR5OjAuOTAxNiIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjU5NDMiIHN0eWxlPSJzdG9wLWNvbG9yOiNCREJEQkQ7c3RvcC1vcGFjaXR5OjAuODg4NyIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjY1NyIgc3R5bGU9InN0b3AtY29sb3I6IzlGOUY5RjtzdG9wLW9wYWNpdHk6MC44NzciLz4NCgkJPHN0b3AgIG9mZnNldD0iMC43MTUxIiBzdHlsZT0ic3RvcC1jb2xvcjojN0M3QzdDO3N0b3Atb3BhY2l0eTowLjg2NjEiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC43Njk1IiBzdHlsZT0ic3RvcC1jb2xvcjojNTI1MjUyO3N0b3Atb3BhY2l0eTowLjg1NTkiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC44MTkiIHN0eWxlPSJzdG9wLWNvbG9yOiMyNTI1MjU7c3RvcC1vcGFjaXR5OjAuODQ2NiIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjg1NDUiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDAwMDA7c3RvcC1vcGFjaXR5OjAuODQiLz4NCgk8L2xpbmVhckdyYWRpZW50Pg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzAuNDEsMTE0LjM2Yy0zLjI2LTkuNTYtNi41My0xOS4xMS05Ljc5LTI4LjY3Yy03LDAtMTQtMC4wMS0yMS0wLjAxQzg5LjksNTcuMTIsODAuMTgsMjguNTYsNzAuNDYsMA0KCQlDNjAuNDksMCw1MC41MSwwLDQwLjU0LDBjMTMuMDIsMzguMTMsMjYuMDUsNzYuMjcsMzkuMDcsMTE0LjRDOTYuNTQsMTE0LjM4LDExMy40OCwxMTQuMzcsMTMwLjQxLDExNC4zNnoiLz4NCgk8bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzJfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjE3LjgxODIiIHkxPSI1OC44OTM2IiB4Mj0iODUuMjcxMiIgeTI9IjUxLjkzMTUiPg0KCQk8c3RvcCAgb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojRkZGRkZGIi8+DQoJCTxzdG9wICBvZmZzZXQ9IjAuMDcyOCIgc3R5bGU9InN0b3AtY29sb3I6I0Y5RjlGOTtzdG9wLW9wYWNpdHk6MC45ODU0Ii8+DQoJCTxzdG9wICBvZmZzZXQ9IjAuMTczIiBzdHlsZT0ic3RvcC1jb2xvcjojRTdFN0U3O3N0b3Atb3BhY2l0eTowLjk2NTIiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC4yODkyIiBzdHlsZT0ic3RvcC1jb2xvcjojQ0FDQUNBO3N0b3Atb3BhY2l0eTowLjk0MTkiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC40MTc0IiBzdHlsZT0ic3RvcC1jb2xvcjojQTFBMUExO3N0b3Atb3BhY2l0eTowLjkxNjIiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC41NTU0IiBzdHlsZT0ic3RvcC1jb2xvcjojNkQ2RDZEO3N0b3Atb3BhY2l0eTowLjg4ODQiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC42OTkzIiBzdHlsZT0ic3RvcC1jb2xvcjojMkYyRjJGO3N0b3Atb3BhY2l0eTowLjg1OTUiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC43OTY1IiBzdHlsZT0ic3RvcC1jb2xvcjojMDAwMDAwO3N0b3Atb3BhY2l0eTowLjg0Ii8+DQoJPC9saW5lYXJHcmFkaWVudD4NCgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNDAuNTQsMGMtMC41MywwLTEuMDcsMC0xLjYsMEMyNS45NiwzOC4xMywxMi45OCw3Ni4yNiwwLDExNC4zOGM5Ljk0LDAsMTkuODctMC4wMSwyOS44MS0wLjAxDQoJCWMzLjkzLTExLjUxLDcuODYtMjMuMDMsMTEuNzktMzQuNTRjOC43MywwLDE3LjQ3LDAsMjYuMjEtMC4wMUM1OC43Miw1My4yMiw0OS42MywyNi42MSw0MC41NCwweiIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xOTkuMTgtMC4wMkMxODkuMTktMC4wMSwxNzkuMiwwLDE2OS4yMSwwYy03Ljk5LDIzLjQ3LTE1Ljk4LDQ2Ljk0LTIzLjk3LDcwLjQyDQoJCUMxMzcuMjQsNDYuOTUsMTI5LjI1LDIzLjQ3LDEyMS4yNiwwYy05Ljk4LDAtMTkuOTcsMC0yOS45NSwwYzEzLjA0LDM4LjEzLDI2LjA4LDc2LjI3LDM5LjEzLDExNC40DQoJCWM5Ljg5LTAuMDEsMTkuNzgtMC4wMSwyOS42Ny0wLjAyYzMuMzctOS43OCw2Ljc1LTE5LjU2LDEwLjEyLTI5LjM0aC0wLjA5QzE3OS44MSw1Ni42OCwxODkuNSwyOC4zMywxOTkuMTgtMC4wMnoiLz4NCjwvZz4NCjwvc3ZnPg0K"
+        alt="Alv logo"
+      />
     </div>
   </body>
 </html>
