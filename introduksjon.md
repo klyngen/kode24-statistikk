@@ -25,23 +25,25 @@ Note:
 
 =new slide=
 
-## Hvorfor skal dere høre på oss?
+<h2>Horfor skal dere høre på oss?</h2>
+
+<div class="r-stack">
+  <div class="fragment fade-in-then-out ">
+      <p>Martin Klingenberg</p>
+      <ul>
+        <li>3 års erfaring</li>
+        <li>Micro services, Angular, .NET</li>
+        <li>0.5 år med micro-frontends</li>
+      </ul>
+  </div>
+  <div class="fragment fade-in-then-out">
+      <p>Martin Klingenberg</p>
+      <ul>
+        <li>3 års erfaring</li>
+        <li>Micro services, Angular, .NET</li>
+        <li>0.5 år med micro-frontends</li>
+      </ul>
+  </div>
+</div>
 
 <!-- .element: class="r-fit-text" -->
-
-#### Martin Klingenberg
-
-- 3 års erfaring
-- Micro-services, Angular, .NET
-- 0.5 år med Micro-Frontend
-
-=new slide=
-
-## Hvorfor skal dere høre på oss?
-
-<!-- .element: class="r-fit-text" -->
-
-- Navn
-- År som utvikler
-- Teknologier man har fokusert på
-- År med Micro frontend utvikling
