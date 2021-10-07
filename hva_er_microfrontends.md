@@ -9,9 +9,6 @@
 Altså er det overordnede målet med microfrontends et organisatorisk problem. Et team med utviklere har en maks størrelse før 1 ekstra utvikler ikke lenger betyr 1 ekstra produksjon.
 
 Note:
-dette er noen bra notater
-sykt bra notater
-med ekstra bra notater på
 
 =vertical slide=
 
