@@ -1,0 +1,71 @@
+/**
+ * Alv theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * Martin Klingenberg
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #061838;
+
+$mainColor: #fff;
+$headingColor: #eabb26;
+
+$mainFontSize: 42px;
+$mainFont: "Source Sans Pro", Helvetica, sans-serif;
+$headingFont: "Source Sans Pro", Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: lighten($linkColor, 25%);
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1em;
+
+// Change text colors against light slide backgrounds
+@include light-bg-text-color(#222);
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal {
+  .slide-background {
+    background: linear-gradient(
+      48deg,
+      rgba(2, 0, 36, 0.9) 0%,
+      rgba(6, 24, 56, 0.9) 35%,
+      rgba(26, 57, 112, 0.9) 100%
+    );
+  }
+}
+
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5 {
+  color: #fff;
+}
+
+.alvlogo {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  embed {
+    height: 50px;
+  }
+}
