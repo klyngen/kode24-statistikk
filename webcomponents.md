@@ -69,4 +69,4 @@ Skal vi ha med XBL graf?
 - document.getElementById() === NEI
 - :root :host.....
 
-- Webpack all the things?
+  - Webpack all the things?
