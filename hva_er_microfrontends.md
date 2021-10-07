@@ -40,47 +40,41 @@ Det er flere grunner til dette. De problemene microfrontends prøver å løse er
 
 =new slide=
 
-Som dere helt sikkert begynner å se så har dette både fordeler og ulemper:
+## Microfronend til unnsetning
 
-- Duplikasjon av avhengigheter ( React, Vue, Angular )
-- Flere må løse de samme problemene hver for seg.
-- Brukere må laste ned den samme koden flere ganger i samme app.
+<img src="https://media.giphy.com/media/mMmr83fKDHok4ihdrI/giphy.gif">
 
 =new slide=
 
-Men flere og flere rapporterer signifikante fordeler som har latt team skalere levereanser av uavhengig publiserte og videreutviklede løsninger.
+## Inkrementelle oppgraderinger
 
-## Så hva må vi som utviklere passe på for å ikke ødelegger for denne strategien.
+- `npm upgreade leftpad`
 
-=new slide=
-
-## Fordeler
-
-### Inkrementelle oppgraderinger
-
-=new slide=
-
+Note:
 Dette der en veldig god måte å starte en microfrontend reise på. Du har en stor og kompleks frontend monolitt og vil implementere noe nytt i deler av den. Men for å kunne bruke dette nye biblioteket må du oppgradere rammeverket. Isteden for å oppgradere hele applikasjonen så lager du en helt ny app som du så pakker sammen og laster inn i den eksisterende applikasjonen. De to applikasjonene kan oppgraderes vær for seg og når de gir mening for vær av de.
 
 =new slide=
 
-Her er det en stor fallgruver. Som utviklere har vi blitt opplært til å ikke duplisere kode. Og det finnes en accordian komponent i den ene applikasjonen. Du trenger en accordian i den andre applikasjonen. Vi bare trekker den ut av den ene applikasjonen inn i ett bibliotek som vi så npm installer i begge applikasjonene. NEI NEI NEI. Så har vi koblet de sammen til en monolitt igjen. Symptomer på dette er:
+## Enkel og isolert kodebase
+
+<img src="https://media.giphy.com/media/SYXXT4vkT7I4nGWPhI/giphy.gif">
 
 =new slide=
 
-- Utviklere i begge team bruker masse tid i møter for å finne ut av hvordan og hvem som skal videreutvikle den divergerned og mere og mere komplokse komponenten.
-- Utviklere forteller i standup at de ikke får verdig tasken sin før noen ett annet sted i organisjasjonen har fikset en bug i en komponent han eller hun skal bruke.
-- etc...
+<!-- ## Om man deler opp en monolitt i mindre biter så blir bitene mindre en monolitten -->
 
-=new slide=
+## Deler man opp kodebasen så blir det flere mindre deler
 
-### Enkel og isolert kodebase
+<img src="https://media.giphy.com/media/vQqeT3AYg8S5O/giphy.gif"> <!-- .element: class="fragment" -->
 
-=new slide=
+<!-- <img src="https://media.giphy.com/media/lJ0JGfNBrRWJVCRChd/giphy.gif"> -->
 
-Om man deler opp en monolitt i mindre biter så blir bitene mindre en monolitten :P En mindre kodebase er enklere for utviklere å jobbe med. Det blir mye lettere å unngå kompleksiteten ved at kode som ikke skal være koblet samme blir det ved tilfeldigheter. Vi må fortsatt skrive clean code. Målet her er å gjøre det det lettere å gjøre gode beslutninger når man skriver kode og vanskeligere å gjøre dårlige beslutninger.
+Note:
 
-Her er det også fallgruver. De forskjellige microfrontendene vil uten tvil måtte kommunisere med hverandre. Dette kan man gjøre på flere måter:
+- En mindre kodebase er enklere for utviklere å jobbe med.
+- Lettere å unngå kompleksiteten ved at kode som ikke skal være koblet samme blir det ved tilfeldigheter.
+- Vi må fortsatt skrive clean code.
+- Målet her er å gjøre det det lettere å gjøre gode beslutninger når man skriver kode og vanskeligere å gjøre dårlige beslutninger.
 
 =new slide=
 
@@ -101,49 +95,32 @@ Siden kodebasen er mindre vil også linting, testing og bygging ta kortere tid.
 
 =new slide=
 
-### Autonome team
+## Autonome team
 
-TODO: Skrive om autonome team og fordelen og ulempene med det.
+<img src="https://giphy.com/clips/thefastsaga-fast-and-furious-saga-fate-of-the-i5ocj7jbl3jXluUJKK">
+
+Note:
+
+- Det eneste møtet man trenger å være med på er standup
+- Hele kodebasen eies av ett team krav til publisering
 
 =new slide=
 
-### Uavhengig publisering
+## Uavhengig publisering
 
-=new slide=
+<img src="https://media.giphy.com/media/uFtywzELtkFzi/giphy.gif">
 
+Note:
 Vær microfronend kan publiseres vær for seg. Dette reduserer størrelsen på endringen i vær publisering og reduserer risikoen for feil. Det blir også typisk mindre tid mellom publiseringen. Altså blir det kortere tid fra en utvikler jobbet med koden til man finner ut at det var noen galt. Når det er kort tid siden du utviklet noe så er det mye lettere å sette seg inn i koden igjen og rasker å fikse feilen.
-
-=new slide=
-
-- Ingen flere felles bilioteker
-- - Hvorfor
-  - Does and donts
-    - Hvordan høste fordelene
 
 =new slide=
 
 ## Passer microfronend for deg
 
-=new slide=
+Flere team skal jobbe på samme frontend
 
-# TODOS
+Note:
 
-- [ ] Sjekke om State of devops har noen på microfrontends
-- [ ] Sjekke om det finnes flere publikasjoner med gode rykter som sier att dette funker
-- [ ] TODO item
+- Du er stor organisasjon som skal samarbeide om 1 frontend
+- Du har en monolitt som er vanskelig å videreutvikle
 
-=new slide=
-
-<!-- .slide: data-background="#FFF" -->
-
-```js [1-2|3|4]
-let a = 1;
-let b = 2;
-let c = (x) => 1 + 2 + x;
-c(3);
-```
-
-=new slide=
-
-- Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
-- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->

@@ -4,8 +4,8 @@ TODO innholdsfortegnelse
 
 Note:
 
-- Hva er Microfrontends - **Truls**
 - Hvorfor høre på oss - **Martin / Truls**
+- Hva er Microfrontends - **Truls**
 - Passer microfrontends for deg? - **Truls**
 - Velg Micro-frontend-retning - **Martin**
 - Microfrontend med Webcomponent - **Martin**
