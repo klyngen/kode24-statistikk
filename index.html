@@ -2,10 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <script module src="https://klingensmicrodemo.z13.web.core.windows.net/"></script>
     <title>reveal.js</title>
@@ -20,6 +17,46 @@
   <body>
     <div class="reveal">
       <div class="slides">
+          <!-- INTRODUKSJON -->
+          <section
+          data-separator-notes="^Note:Vi skal ta lytteren med på en vei frem til et lykkelig liv med micro-frontends"
+          data-charset="utf8"
+          data-background-image="./4.jpg"
+          >
+              <section>
+                  <h2 class="r-fit-text">Veien til Micro-Frontends</h2>
+                  <em class="r-fit-text">Med Truls Aagaard og Martin Klingenberg</em>
+              </section>
+              <section>
+                  <h2 class="r-fit-text">Hvorfor skal dere høre på oss?</h2>
+                  <p>TODO: Kan vi ting?</p>
+              </section>
+              <section>
+                  <h2>Hva er MicroFrontends?</h2>
+                  <p>Bit av en frontend, publisert uavhengig av en plattform</p>
+              </section>
+              <section>
+                  <h1 class="r-fit-text">Hvorfor skal man bry seg om micro-frontends?</h1>
+                  <!-- Her snakker vi bare rundt det som er skrevet i hva_er_microfrontends.md -->
+                  <section tagcloud>
+                      Skalerbarhet
+                      React
+                      Angular
+                      Vue
+                      Uavhengig publisering
+                      Autonome team
+                      Små kodebaser
+                      Spennende
+                      Enkel refaktorering
+                      Moderne
+                      Hastighet
+                  </section>
+              </section>
+              <section>
+                  <h3>Veien til Microfrontends er smal, og det er lett å falle utenfor</h3>
+              </section>
+          </section>
+
         <section
           data-markdown="hva_er_microfrontends.md"
           data-separator="^=new slide="
@@ -96,7 +133,10 @@
         hash: true,
 
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+          dependencies: [
+            { src: 'plugin/tagcloud/tagcloud.js', async: true }
+          ]
       });
     </script>
   </body>
