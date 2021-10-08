@@ -1,7 +1,7 @@
 # TODOS
 
-- [ ] Skrive hvorfor høre på Truls
-- [ ] Skrive liten demo
+- [x] Skrive hvorfor høre på Truls
+- [x] Skrive liten demo
 - [ ] Skrive Organisatoriske fallgruver
 
 ## Organisatoriske fallgruver
