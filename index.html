@@ -125,29 +125,69 @@
                     </ul>
                     <iframe style="height:400px; width: 400px" scrolling="no" frameborder="0" src="https://www.vg.no"></iframe>
                   </div>
-                  <div class="fragment fade-in">
-                  </div>
                 </div>
             </section>
             <section>
                 <h3>Web Components</h3>
                 <div class="r-stack">
-                  <div class="fragment fade-in-then-out">
-                      <h5>Pros</h5>
+                    <div class="fragment fade-out">
+                        <img src="https://www.webcomponents.org/assets/logo-192x192.png" alt="" />
+                    </div>
+                  <div class="fragment fade-up">
                     <ul>
-                        <li>Enkapsulering</li>
-                        <li>Muligheten til å definere egne tags</li>
+                        <li>Evnen til å definere egne tags</li>
+                        <li>Enkapsulering av stiler</li>
                         <li>Framework Agnostic</li>
+                        <li>Kan lages med ditt favoritt-rammeverk</li>
+                        <li>Kan brukes på tvers av rammeverk</li>
                     </ul>
                   </div>
-                  <div class="fragment fade-in-then-out">
-                    <h5>Cons</h5>
-                    <ul>
-                        <li>Man kan få problemer med pakker</li>
-                        <li>En del biblioteker fungerer ikke</li>
-                    </ul>
+                  <div class="fragment">
+                      <iframe src="https://giphy.com/embed/BrQbmVfEs2rsQRolnw" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ted-lasso-quotes-lassoquotes-BrQbmVfEs2rsQRolnw"></a></p>
                   </div>
+            </section>
+            <section>
+              <!-- Mini demo av basic web component -->
+              <h3>Trenger ikke være mere enn dette</h3>
+              <pre><code>
+&lt;script>
+  class MicroFrontendFun extends HTMLElement {
+      constructor() {
+          super();
+          this.innerHTML = "Micro frontends for FTW!";
+      }
+  }
+  customElements.define("micro-demo", MicroFrontendFun);
+&lt;/script>
+              </code></pre>
+            </section>
+        </section>
+        <section>
+            <h2>Litt større eksempel</h2>
+            <div class="r-stack">
+                <div class="fragment fade-in-then-out">
+                    <style type="text/css" media="screen">
+                     :host {
+
+                     }
+                     .app > weather-data:nth-child(2) {
+
+                     }
+                    </style>
+
+                    <div class="weather-container" style="height:45vh; width: 50vw; margin-bottom: 20px">
+                        <yr-extra></yr-extra>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="r-fit-text">TEKNISKE GOTCHAS</h1>
+            <section>
+                <h3>Enkapsulert, meeeeeeen</h3>
+                <ul>
+                    <li>:root, :host</li>
+                </ul>
             </section>
         </section>
 
