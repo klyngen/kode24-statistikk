@@ -2,9 +2,9 @@
 
 =new slide=
 
-<img src="https://media.giphy.com/media/ukMiDlCmdv2og/giphy.gif" width="80%"/>
+<!-- <img src="https://media.giphy.com/media/ukMiDlCmdv2og/giphy.gif" width="80%"/> -->
 
-=new slide=
+<!-- =new slide= -->
 
 ## En løsning på et organisatorisk problem
 
@@ -97,8 +97,6 @@ Siden kodebasen er mindre vil også linting, testing og bygging ta kortere tid.
 
 ## Autonome team
 
-<img src="https://giphy.com/clips/thefastsaga-fast-and-furious-saga-fate-of-the-i5ocj7jbl3jXluUJKK">
-
 Note:
 
 - Det eneste møtet man trenger å være med på er standup
@@ -120,7 +118,6 @@ Vær microfronend kan publiseres vær for seg. Dette reduserer størrelsen på e
 Flere team skal jobbe på samme frontend
 
 Note:
-
 - Du er stor organisasjon som skal samarbeide om 1 frontend
 - Du har en monolitt som er vanskelig å videreutvikle
 
