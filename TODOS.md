@@ -1,7 +1,7 @@
 # TODOS
 
-- [ ] Skrive hvorfor høre på Truls
-- [ ] Skrive liten demo
+- [x] Skrive hvorfor høre på Truls
+- [x] Skrive liten demo
 - [ ] Skrive Organisatoriske fallgruver
 
 ## Organisatoriske fallgruver
@@ -29,4 +29,6 @@ Frontenden må deles opp på de grensene der det er minst komunikasjon
 - Ingen flere felles bilioteker
 - - Hvorfor
   - Does and donts
-    - Hvordan høste fordelene
+    - Hvordan høste fordelen
+
+

@@ -39,6 +39,7 @@
             <em class="r-fit-text">Med Truls Aagaard og Martin Klingenberg</em>
           </section>
           <section>
+            <h2>Hvem er vi</h2>
             <div class="r-stack">
               <div class="fragment fade-in-then-out ">
                   <p>Martin Klingenberg</p>
@@ -49,11 +50,11 @@
                   </ul>
               </div>
               <div class="fragment fade-in-then-out">
-                  <p>Person X</p>
+                  <p>Truls Aagaard</p>
                   <ul>
-                    <li>x år efaring</li>
-                    <li>Kan sikkert ting</li>
-                    <li>Har arbeidet med angular</li>
+                    <li>7 år efaring</li>
+                    <li>Frontend, DevOps, Infrastruktur som kode</li>
+                    <li>0.5 år med micro-frontends</li>
                   </ul>
               </div>
             </div>
@@ -151,21 +152,22 @@
                       <iframe src="https://giphy.com/embed/BrQbmVfEs2rsQRolnw" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ted-lasso-quotes-lassoquotes-BrQbmVfEs2rsQRolnw"></a></p>
                   </div>
             </section>
-            <section>
-              <!-- Mini demo av basic web component -->
-              <h3>Trenger ikke være mere enn dette</h3>
-              <pre><code>
-&lt;script>
-  class MicroFrontendFun extends HTMLElement {
-      constructor() {
-          super();
-          this.innerHTML = "Micro frontends for FTW!";
-      }
-  }
-  customElements.define("micro-demo", MicroFrontendFun);
-&lt;/script>
-              </code></pre>
-            </section>
+        </section>
+
+        <section
+          data-background-image="./3.jpg"
+        >
+        <section><h1>Demo</h1></section>
+          <section
+            data-markdown="mini_demo.md"
+            data-separator="^=new slide="
+            data-separator-vertical="^=vertical slide="
+            data-separator-notes="^Note:"
+            data-charset="utf8"
+          ></section>
+          <section>
+            <micro-demo></micro-demo>
+          </section>
         </section>
         <section>
             <h2>Litt større eksempel</h2>
@@ -220,37 +222,10 @@
           <h1>Weather app</h1>
           <yr-extra></yr-extra>
         </section>
-        <section
-          data-separator="^=new slide="
-          data-separator-vertical="^=vertical slide="
-          data-separator-notes="^Note:"
-          data-charset="utf8"
-        >
-          <!-- Mini demo av basic web component -->
-          <h3>Trenger ikke være mere enn dette</h3>
-          <p>index.html</p>
-          <pre>
-<code>
-  &lt;script>
-      class MicroFrontendFun extends HTMLElement {
-          constructor() {
-              super();
-              this.innerHTML = "Micro frontends for FTW!";
-          }
-      }
-      customElements.define("micro-demo", MicroFrontendFun);
-   console.log("NEI NEI NEI");
-  &lt;/script>
-</code>
-            </pre>
-          <button id="test-button">TEST</button>
-          <script type="text/javascript">
-            const buttonElement = document.getElementById("test-button");
-          </script>
-        </section>
       </div>
     </div>
 
+    <script src="http://localhost:8001/micro-demo.js"></script>
     <script src="dist/reveal.js"></script>
     <script src="plugin/notes/notes.js"></script>
     <script src="plugin/markdown/markdown.js"></script>
