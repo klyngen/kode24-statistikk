@@ -33,7 +33,6 @@
 ## Hva er behovet for microfrontends
 
 - [ ] Løsningen på et organisatorisk problem
-
 - [ ] bli kvitt liste slide
 - [ ] Bedre gjennomgang per punkt
 
