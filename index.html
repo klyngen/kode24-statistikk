@@ -25,69 +25,10 @@
         <!-- INTRODUKSJON -->
         <section
           data-charset="utf8"
+          data-external="slides/introduksjon.html"
           data-background-image="./3.jpg"
-        >
-
-          <section>
-            <h1 class="r-fit-text">Veien til Micro-Frontends</h1>
-            <em class="r-fit-text">Med Truls Aagaard og Martin Klingenberg</em>
-          </section>
-          <section>
-            <h2>Hvem er vi</h2>
-            <div class="r-stack">
-              <div class="fragment fade-in-then-out ">
-                  <p>Martin Klingenberg</p>
-                  <ul>
-                    <li>3 års erfaring</li>
-                    <li>Micro services, Angular, .NET</li>
-                    <li>0.5 år med micro-frontends</li>
-                  </ul>
-              </div>
-              <div class="fragment fade-in-then-out">
-                  <p>Truls Aagaard</p>
-                  <ul>
-                    <li>7 år efaring</li>
-                    <li>Frontend, DevOps, Infrastruktur som kode</li>
-                    <li>0.5 år med micro-frontends</li>
-                  </ul>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h2>Innholdsfortegnelse</h2>
-            <p>TODO innholdsfortegnelse</p>
-            <pre>
-              <aside class="notes">
-                - Hva er Microfrontends - **Truls**
-                - Hvorfor høre på oss - **Martin / Truls**
-                - Passer microfrontends for deg? - **Truls**
-                - Velg Micro-frontend-retning - **Martin**
-                - Microfrontend med Webcomponent - **Martin**
-                - Minimal demo - **Truls**
-                - Stor demo, med gotcha - **Martin**
-                - Gothca Teknisk - **Martin**
-                  - Stiler
-                  - biblioteker
-                    - document.get....
-                    - overlays
-                    - runtime-issues
-                    - url, session / local-storage, cache, window.\*, custom-events
-                  - Stor demo som fungerer alvtime
-                - Villspor med med organisasjon - **Truls**
-                  - Vi har løst tekniske problemer, men har ingen av fordelene
-                - Stor demo - **Martin**
-              </aside>
-            </pre>
-          </section>
-          <section>
-            <h3>
-              Veien til Microfrontends er smal, og det er lett å falle utenfor
-            </h3>
-          </section>
-        </section>
-        <section
-          data-background-image="./3.jpg"
-        >
+        ></section>
+        <section data-background-image="./3.jpg">
           <section
             data-markdown="hva_er_microfrontends.md"
             data-separator="^=new slide="
@@ -96,67 +37,15 @@
             data-charset="utf8"
           ></section>
         </section>
-        <section data-background-image="./2.jpg">
-          <section>
-            <h1>Velg teknologisk retning</h1>
-            <p class="r-fit-text">Frontend, Backend eller Begge?</p>
-            <aside class="notes">
-                <p>Man kan gjøre backend med server side rendering</p>
-                <p>Man kan også blande frontend og backend</p>
-                <p>TIng syes sammen begge steder</p>
-                <p>Det kan ikke jeg noe om</p>
-                <p>Fokus på frontend-veien til micro-frontends</p>
-                <p>La oss se på et par alternativer</p>
-            </aside>
-          </section>
-          <section>
-              <aside class="notes">
-                  Hvor mange har åpnet spotify
-              </aside>
-                <h3 class="r-fit-text">IFrames!? Er du seriøs!?</h3>
-                <div class="r-stack">
-                  <h1 class="fragment fade-in-then-out r-fit-text">Ja</h1>
-                  <div class="fragment fade-in-then-out">
-                    <h5>Pros</h5>
-                    <ul>
-                        <li>Enkelt</li>
-                        <li>Utprøvd</li>
-                        <li>Utrolig god enkapsulering</li>
-                        <li>Helt egen <emp>runtime</emp></li>
-                    </ul>
-                  </div>
-                  <div class="fragment fade-in-then-out">
-                    <h5>Cons</h5>
-                    <ul>
-                        <li>Kanskje for god enkapsulering?</li>
-                        <li>Sikkerhet</li>
-                    </ul>
-                    <iframe style="height:400px; width: 400px" scrolling="no" frameborder="0" src="https://www.vg.no"></iframe>
-                  </div>
-                </div>
-            </section>
-            <section>
-                <h3>Web Components</h3>
-                <div class="r-stack">
-                    <div class="fragment fade-out">
-                        <img src="https://www.webcomponents.org/assets/logo-192x192.png" alt="" />
-                    </div>
-                  <div class="fragment fade-up">
-                    <ul>
-                        <li>Evnen til å definere egne tags</li>
-                        <li>Enkapsulering av stiler</li>
-                        <li>Framework Agnostic</li>
-                        <li>Kan lages med ditt favoritt-rammeverk</li>
-                        <li>Kan brukes på tvers av rammeverk</li>
-                    </ul>
-                  </div>
-                  <div class="fragment">
-                      <iframe src="https://giphy.com/embed/BrQbmVfEs2rsQRolnw" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ted-lasso-quotes-lassoquotes-BrQbmVfEs2rsQRolnw"></a></p>
-                  </div>
-            </section>
-        </section>
-        <section data-background-image="./3.jpg" >
-        <section><h1>Demo</h1></section>
+        <!-- TEKNOLOGISK RETNING -->
+        <section
+            data-background-image="./2.jpg"
+            data-external="slides/teknologisk_retning.html"
+            data-charset="utf8"
+        ></section>
+        <section
+            data-background-image="./3.jpg" >
+          <section><h1>Demo</h1></section>
           <section
             data-markdown="mini_demo.md"
             data-separator="^=new slide="
@@ -168,82 +57,17 @@
             <micro-demo></micro-demo>
           </section>
         </section>
-        <section data-background-image="./1.jpg">
-            <h2>Litt større eksempel</h2>
-            <div class="r-stack">
-                <div class="fragment fade-in-then-out">
-                    <div class="weather-container" style="height:45vh; width: 50vw; margin-bottom: 20px">
-                        <yr-extra></yr-extra>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- STØRRE DEMO -->
         <section
-          data-background-image="./3.jpg"
-        >
-            <h1 class="r-fit-text">TEKNISKE GOTCHAS</h1>
-            <section>
-                <h3>Enkapsulert, meeeeeeen</h3>
-                <aside class="notes">
-                    <p>Det er unntak fra enkapsuleringen</p>
-                    <p>Ingen verdi spesifisert for størrelsen</p>
-                    <p>Agen default ble valgt</p>
-                </aside>
-                <ul class="fragment">
-                    <li>:root, :host, ::part(element)</li>
-                    <li>Moder-applikasjonen vil alltid ha siste ordet</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Bibliotekene dine har ukjente synder</h3>
-                <aside class="notes">
-                    <p>Når du setter i gang med web-komponenter</p>
-                    <p>Ting vil slutte å fungere, og det er flere grunner til det</p>
-                </aside>
-                  <div class="fragment fade-in-then-out">
-                    <pre>
-                        <code>
-    document.getElementBy(Id|TagName|Class)
-                        </code>
-                    </pre>
-                    Har alltid fungert, men ikke nå lenger
-                  </div>
-                  <div class="r-stack">
-                    <div class="fragment fade-in-then-out">
-                        Enkelte biblioteker vil krangle i runtime
-                    </div>
-                    <div class="fragment">
-                        URL, SessionStorage, window, custom-events
-                    </div>
-                  </div>
-            </section>
-            <section>
-                <h3>Kommuniksajon mellom frontends</h3>
-                <div class="r-stack">
-                  <div class="fragment fade-in">
-                      <div class="fragment fade-in-then-out">
-                          Kan gjøres på alt for mange måter
-                          <ul>
-                              <li>Custom Events</li>
-                              <li>Meldings-busser</li>
-                              <li>URL</li>
-                              <li>sessionStorage</li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="fragment fade-in-then-out">
-                      <h2>Fleksibilitet og svake kontrakter skaper kaos</h2>
-                  </div>
-                  <div class="fragment fade-in-then-out">
-                       <iframe src="https://giphy.com/embed/nrXif9YExO9EI" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-                  </div>
-                  <div class="fragment">
-                      <h2>Definer kontraktene tidlig</h2>
-                  </div>
-                </div>
-            </section>
+            data-background-image="./2.jpg"
+            data-charset="utf8"
+            data-external="slides/storre_demo.html">
         </section>
-
+        <!-- TEKNISKE GOTCHAS -->
+        <section
+            data-background-image="./3.jpg"
+            data-external="slides/tekniske_gotchas.html">
+        </section>
         <section>
             <section>
               <h1 class="r-fit-text">Oranisatoriske GOTCHAS</h1>
@@ -277,7 +101,12 @@
 
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-        dependencies: [{ src: "plugin/tagcloud/tagcloud.js", async: true }],
+          dependencies: [
+              { src: "plugin/tagcloud/tagcloud.js", async: true },
+              { src: 'plugin/external/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
+          ],
+
+
       });
     </script>
     <div class="alvlogo">
