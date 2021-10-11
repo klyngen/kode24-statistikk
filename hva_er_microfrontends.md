@@ -48,7 +48,9 @@ Det er flere grunner til dette. De problemene microfrontends prøver å løse er
 
 ## Inkrementelle oppgraderinger
 
-- `npm upgreade leftpad`
+```
+$ npm upgrade leftpad
+```
 
 Note:
 Dette der en veldig god måte å starte en microfrontend reise på. Du har en stor og kompleks frontend monolitt og vil implementere noe nytt i deler av den. Men for å kunne bruke dette nye biblioteket må du oppgradere rammeverket. Isteden for å oppgradere hele applikasjonen så lager du en helt ny app som du så pakker sammen og laster inn i den eksisterende applikasjonen. De to applikasjonene kan oppgraderes vær for seg og når de gir mening for vær av de.
@@ -116,7 +118,7 @@ Vær microfronend kan publiseres vær for seg. Dette reduserer størrelsen på e
 
 =new slide=
 
-## Passer microfronend for deg
+## Passer microfrontend for deg
 
 Flere team skal jobbe på samme frontend
 
