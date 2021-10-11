@@ -33,7 +33,6 @@
 ## Hva er behovet for microfrontends
 
 - [ ] Løsningen på et organisatorisk problem
-
 - [ ] bli kvitt liste slide
 - [ ] Bedre gjennomgang per punkt
 
@@ -57,17 +56,17 @@
 
 ## Mini demo
 
-- [ ] Shadowdom fordi det funker
-- [ ] Trenger ikke gå igjennom js koden
-- [ ] Må skrive koden riktig
-- [ ] Samle koden på 1 slide
-- [ ] Vise først tom slide som mangler microfrontend
-- [ ] Åpne terminal. Vise mappe innhold
-- [ ] Batte ut filene
-- [ ] Starte http serveren
-- [ ] Refreshe siden
-- [ ] Vise i inspektør
-- [ ] Må ha tilkoblet mus fordi vi bruker mac
+- [x] Shadowdom fordi det funker
+- [x] Trenger ikke gå igjennom js koden
+- [x] Må skrive koden riktig
+- [x] Samle koden på 1 slide
+- [x] Vise først tom slide som mangler microfrontend
+- [x] Åpne terminal. Vise mappe innhold
+- [x] Batte ut filene
+- [x] Starte http serveren
+- [x] Refreshe siden
+- [x] Vise i inspektør
+- [x] Må ha tilkoblet mus fordi vi bruker mac
 
 ## Tekniske problemer
 
