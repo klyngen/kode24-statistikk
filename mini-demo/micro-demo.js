@@ -1,7 +1,12 @@
+// micro-demo.js
 class MicroFrontendFun extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = "Micro frontends for FTW!";
+    const shadowRoot = this.attachShadow({ mode: "open" });
+    shadowRoot.innerHTML = `
+      <p style='color: magenta; font-size: 50px'>
+        Micro frontends FTW!
+      </p>`;
   }
 }
 
