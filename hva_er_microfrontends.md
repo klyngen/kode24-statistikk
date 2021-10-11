@@ -70,13 +70,20 @@ Dette der en veldig god måte å starte en microfrontend reise på. Du har en st
 <!-- <img src="https://media.giphy.com/media/lJ0JGfNBrRWJVCRChd/giphy.gif"> -->
 
 Note:
+Alt er letter med en mindre kodebase
+
+- Navigere
+- Refaktorering
+- Overblikk
+
+## Gammelt
 
 - En mindre kodebase er enklere for utviklere å jobbe med.
 - Lettere å unngå kompleksiteten ved at kode som ikke skal være koblet samme blir det ved tilfeldigheter.
 - Vi må fortsatt skrive clean code.
 - Målet her er å gjøre det det lettere å gjøre gode beslutninger når man skriver kode og vanskeligere å gjøre dårlige beslutninger.
 
-=new slide=
+## Kommunikasjon
 
 Via:
 
@@ -85,11 +92,7 @@ Via:
 - Local/Session storage
 - Via URL
 
-=new slide=
-
 Uansett hvordan man ender opp med å gjøre det så må man lage en explisitt kontrokat på hva som sendes og motas hvor. Dette er jo noe vi burdet gjort uansett og noe som har hatt stor sukksess i microservise verden ved definering av APIer. Du trenge rikke vente på at teamet i naborommet må bli ferdig men sin halv-ferdig enorm endring. Vært team publisere sin microfronend når og så ofte som det passer i forhold til hvilken type future man jobber på.
-
-=new slide=
 
 Siden kodebasen er mindre vil også linting, testing og bygging ta kortere tid.
 
@@ -118,6 +121,6 @@ Vær microfronend kan publiseres vær for seg. Dette reduserer størrelsen på e
 Flere team skal jobbe på samme frontend
 
 Note:
+
 - Du er stor organisasjon som skal samarbeide om 1 frontend
 - Du har en monolitt som er vanskelig å videreutvikle
-
