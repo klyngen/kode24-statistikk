@@ -1,4 +1,4 @@
-## Vi bruker microfrontender
+## Vi bruker micro frontender
 
 🥂 <!-- .element: style="font-size:10rem" -->
 
@@ -16,9 +16,9 @@ Note:
 
 =new slide=
 
-## Så hva må vi som utviklere passe på for å ikke ødelegger for denne strategien.
+## Så hva må vi som utviklere passe på for å ikke ødelegge?
 
-- Unngå å bli avhengig av folk i andre team
+Unngå å bli avhengig av folk i andre team
 
 Note:
 
