@@ -402,6 +402,11 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 .dot {
   color: #eabb26;
+  font-size: var(--r-heading1-size);
+  font-family: initial;
+  line-height: 0px;
+  position: absolute;
+  margin-left: -10px;
 }
 
 .underline::after {
