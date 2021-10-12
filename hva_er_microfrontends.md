@@ -9,7 +9,7 @@ Note:
 
 <!-- <img src="https://media.giphy.com/media/ukMiDlCmdv2og/giphy.gif" width="80%"/> -->
 
-## En av løsningene på<br /> 👇
+## En av løsningene på<span class="dot">.</span></h2> <span style="font-size: 4rem;">👇</span>
 
 <!-- TODO: Understrek og punktum-->
 
@@ -30,10 +30,7 @@ Note:
 
 ## Micro service har jo løst dette<span class="dot">.</span>
 
-<div class="r-stack">
-  <img class="fragment fade-in-then-out" src="https://media.giphy.com/media/mMmr83fKDHok4ihdrI/giphy.gif">
-  <p style="font-size:10rem" class="fragment fade-in">👍</p>
-</div>
+<p style="font-size:10rem" class="fragment fade-in">👍</p>
 
 Note:
 
