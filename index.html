@@ -6,9 +6,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-
-
-    </script>
     <title>MFR tech talk</title>
 
     <link rel="stylesheet" href="dist/reset.css" />
@@ -25,8 +22,38 @@
         <section
           data-charset="utf8"
           data-external="slides/introduksjon.html"
-          data-background-image="./3.jpg"
+          data-background-image="./1.jpg"
         ></section>
+
+        <section data-background-image="./2.jpg">
+          <section>
+            <h2 class="r-fit-text">Vi starter med der vi er i dag</h2>
+            <svg
+              width="62"
+              height="62"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.4049 11.1902C4.65756 11.1902 0 15.8477 0 21.5951C0 27.3424 4.65756 32 10.4049 32H20.8098V21.5951H10.4049V11.1902Z"
+                fill="#006838"
+              ></path>
+              <path
+                d="M20.8099 0H11.7496C6.00436 0 1.34473 4.65756 1.34473 10.4049H11.7496H20.8099V21.593H31.2148V10.4049C31.2128 4.65963 26.5552 0 20.8099 0Z"
+                fill="#39B54A"
+              ></path>
+            </svg>
+            <p>Aize og Twin Explorer</p>
+            <aside class="notes">
+                <p>Aize er ett nyopprettet softwareselsakp som utvikler</p>
+                <p>applikasjoner som - Dette er målet vårt - Dette er CE som er en</p>
+                <p>På høyresiden har vi constructability engine, validerer en 3D-modell mot et sett med regler</p>
+                <p>Publisert helt individuelt</p>
+                <p>Nå skal vi prate med dere om hvordan vi kom hit</p>
+            </aside>
+          </section>
+        </section>
         <section data-background-image="./3.jpg">
           <section
             data-markdown="hva_er_microfrontends.md"
@@ -38,12 +65,11 @@
         </section>
         <!-- TEKNOLOGISK RETNING -->
         <section
-            data-background-image="./2.jpg"
-            data-external="slides/teknologisk_retning.html"
-            data-charset="utf8"
+          data-background-image="./4.jpg"
+          data-external="slides/teknologisk_retning.html"
+          data-charset="utf8"
         ></section>
-        <section
-            data-background-image="./3.jpg" >
+        <section data-background-image="./5.jpg">
           <section><h1>Demo</h1></section>
           <section
             data-markdown="mini_demo.md"
@@ -58,30 +84,36 @@
         </section>
         <!-- STØRRE DEMO -->
         <section
-            data-background-image="./2.jpg"
-            data-charset="utf8"
-            data-external="slides/storre_demo.html">
-        </section>
+          data-background-image="./6.jpg"
+          data-charset="utf8"
+          data-external="slides/storre_demo.html"
+        ></section>
         <!-- TEKNISKE GOTCHAS -->
         <section
-            data-background-image="./3.jpg"
-            data-external="slides/tekniske_gotchas.html">
+          data-background-image="./7.jpg"
+          data-external="slides/tekniske_gotchas.html"
+        ></section>
+        <section data-background-image="./8.jpg">
+          <section>
+            <h1 class="r-fit-text">Oranisatoriske GOTCHAS</h1>
+          </section>
+          <section
+            data-markdown="organisatoriske_gotchas.md"
+            data-separator="^=new slide="
+            data-separator-vertical="^=vertical slide="
+            data-separator-notes="^Note:"
+            data-charset="utf8"
+          ></section>
         </section>
-        <section>
-            <section>
-              <h1 class="r-fit-text">Oranisatoriske GOTCHAS</h1>
-            </section>
-            <section
-              data-markdown="organisatoriske_gotchas.md"
-              data-separator="^=new slide="
-              data-separator-vertical="^=vertical slide="
-              data-separator-notes="^Note:"
-              data-charset="utf8"
-            ></section>
-        </section>
-        <section>
+        <section data-background-image="./9.jpg">
+          <section>
             <h2 class="r-fit-text">Alt kan fungere i harmoni</h2>
-            <iframe frameborder="0" style="height: 60vh; width: 80vw" src="http://localhost:9002"></iframe>
+            <iframe
+              frameborder="0"
+              style="height: 60vh; width: 80vw"
+              src="http://localhost:9002"
+            ></iframe>
+          </section>
         </section>
       </div>
     </div>
@@ -108,12 +140,15 @@
 
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-          dependencies: [
-              { src: "plugin/tagcloud/tagcloud.js", async: true },
-              { src: 'plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
-          ],
-
-
+        dependencies: [
+          { src: "plugin/tagcloud/tagcloud.js", async: true },
+          {
+            src: "plugin/external/external.js",
+            condition: function () {
+              return !!document.querySelector("[data-external]");
+            },
+          },
+        ],
       });
     </script>
 

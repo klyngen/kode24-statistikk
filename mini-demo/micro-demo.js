@@ -2,7 +2,7 @@
 class MicroFrontendFun extends HTMLElement {
   constructor() {
     super();
-    const shadowRoot = this.attachShadow({ mode: "open" });
+    const shadowRoot = this.attachShadow({ mode: "close" });
     shadowRoot.innerHTML = `
       <p style='color: magenta; font-size: 50px'>
         Micro frontends FTW!
