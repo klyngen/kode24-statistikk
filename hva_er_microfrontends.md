@@ -1,6 +1,7 @@
 ## Hva er behovet for microfrontends
 
 Note:
+
 - [ ] Løsningen på et organisatorisk problem
 - [ ] bli kvitt liste slide
 - [ ] Bedre gjennomgang per punkt
@@ -12,6 +13,8 @@ Note:
 <!-- =new slide= -->
 
 ## En løsning på et organisatorisk problem
+
+<!-- TODO: Understrek og punktum-->
 
 Hvordan får vi skalert frontend utvikling?
 
@@ -28,6 +31,7 @@ Altså er det overordnede målet med microfrontends et organisatorisk problem. E
 ## Skaleringsproblemene
 
 Note:
+
 - Endringer blir vanskeligere
 - Refaktorering blir vanskeligere
 - Endringer krever møter

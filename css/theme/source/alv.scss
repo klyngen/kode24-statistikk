@@ -48,7 +48,7 @@ $heading4Size: 1em;
       48deg,
       rgba(2, 0, 36, 0.9) 0%,
       rgba(6, 24, 56, 0.9) 35%,
-      rgba(26, 57, 112, 0.9) 100%
+      rgba(26, 57, 112, 0.9) 100% /*TODO: Maybe add less background image*/
     );
   }
 }
@@ -56,12 +56,20 @@ $heading4Size: 1em;
 .reveal h3,
 .reveal h4,
 .reveal h5 {
-  color: #fff;
+}
+
+.reveal {
+  h3,
+  h4,
+  h5 {
+    color: #eabb26;
+    text-transform: none;
+  }
 }
 
 .reveal h1,
 .reveal h2 {
-  color: #eabb26;
+  color: #fff;
 }
 
 .alvlogo {
@@ -73,3 +81,33 @@ $heading4Size: 1em;
     height: 4vw;
   }
 }
+
+.jakobs-onske {
+  h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 4px;
+  }
+  .mest {
+    font-weight: 600;
+  }
+}
+
+.dot {
+  color: #eabb26;
+  font-size: 100px;
+  line-height: 0;
+}
+
+.yellow-ruler {
+  height: 8px;
+  width: 16vw;
+  background-color: #eabb26;
+  margin-bottom: ;
+}
+
+/*
+ * Pseudo-class dot
+ * Pseudo-underline h1, noen ganger
+ */
