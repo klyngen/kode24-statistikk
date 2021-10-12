@@ -9,7 +9,7 @@ Note:
 
 <!-- <img src="https://media.giphy.com/media/ukMiDlCmdv2og/giphy.gif" width="80%"/> -->
 
-## En løsning på et organisatorisk problem
+## En av løsningene på<br /> 👇
 
 <!-- TODO: Understrek og punktum-->
 
@@ -26,54 +26,59 @@ Note:
 - Vi drømmer oss tilbake til den tiden da alle beslutninger kunne gjøres innad i teamet
 - Og Pulisering var noe vi gjorde når vi var ferdig med en ny funksjonalitet
 
-## Skaleringsproblemene
+=new slide=
 
-- Endringer blir vanskeligere
-- Refaktorering blir vanskeligere
-- Endringer krever møter
-- Publisering krever møter
+## Micro service har jo løst dette<span class="dot">.</span>
 
-- Stor og kompleks kodebase som det er vanskelig å naviger og forstå
+<div class="r-stack">
+  <img class="fragment fade-in-then-out" src="https://media.giphy.com/media/mMmr83fKDHok4ihdrI/giphy.gif">
+  <p style="font-size:10rem" class="fragment fade-in">👍</p>
+</div>
 
-Det er flere grunner til dette. De problemene microfrontends prøver å løse er:
+Note:
+
+- Alle disse problemene har vi jo hørt at backend har vært igjennom
+- I backend kan man dele opp sine enorme monolitter i microserviser og definere kontrokter vi api endepunkter og swagger dokumentasjone
+- Dette vil vi også ha
+
+=new slide=
+
+<h2 class="underline">Micro frontend utfordringer<span class="dot">.</span></h2>
+
+<ul style="list-style: none">
+  <li>👎 Operationel kompleksitet</li>
+  <li>👎 Forskjell mellom miljøer</li>
+  <li>👎 Pakke størrelse</li>
+</ul>
+
+=new slide=
+
+<h2 class="underline">Micro frontend lovnader<span class="dot">.</span></h2>
+
+<ul style="list-style: none">
+  <li>👍 Uavhengig publisering</li>
+  <li>👍 Inkrementelle oppgraderinger</li>
+  <li>👍 Autonome team</li>
+  <li>👍 Enkle uavhengige codebaser</li>
+</ul>
+
+Note:
 
 - Bytte ut stor og komplekse kodebaser med mere håndterbare størrelser
 - En mere skalerbare organisasjon via løsrevne autonome team
 - Oppgradering og oppdatering av avhengigheter uten å påvirke mange andre
 - Lettere refaktorering på en mere incrementell måte
 
-=new slide=
+- Do you have enough automation in place to feasibly provision and manage the additional required infrastructure?
+- Will your frontend development, testing, and release processes scale to many applications?
+- Are you comfortable with decisions around tooling and development practices becoming more decentralised and less controllable?
+- How will you ensure a minimum level of quality, consistency, or governance across your many independent frontend codebases?
 
-## Micro frontend til unnsetning
+- Dette der en veldig god måte å starte en microfrontend reise på. Du har en stor og kompleks frontend monolitt og vil implementere noe nytt i deler av den. Men for å kunne bruke dette nye biblioteket må du oppgradere rammeverket. Isteden for å oppgradere hele applikasjonen så lager du en helt ny app som du så pakker sammen og laster inn i den eksisterende applikasjonen. De to applikasjonene kan oppgraderes vær for seg og når de gir mening for vær av de.
 
-<div class="r-stack">
-  <img class="fragment fade-in-then-out" src="https://media.giphy.com/media/mMmr83fKDHok4ihdrI/giphy.gif">
-  <p style="font-size:10rem" class="fragment fade-in">👌</p>
-</div>
-
-Note:
-
-- Alle disse problemene har vi jo hørt at backend har vært igjennom
-- I backend kan man dele opp sine enorme monolitter i microserviser
-
-=new slide=
-
-## Inkrementelle oppgraderinger
-
-```
-$ npm upgrade leftpad
-```
-
-Note:
-Dette der en veldig god måte å starte en microfrontend reise på. Du har en stor og kompleks frontend monolitt og vil implementere noe nytt i deler av den. Men for å kunne bruke dette nye biblioteket må du oppgradere rammeverket. Isteden for å oppgradere hele applikasjonen så lager du en helt ny app som du så pakker sammen og laster inn i den eksisterende applikasjonen. De to applikasjonene kan oppgraderes vær for seg og når de gir mening for vær av de.
-
-=new slide=
-
-## Enkel og isolert kodebase
+- Enkel og isolert kodebase
 
 <img src="https://media.giphy.com/media/SYXXT4vkT7I4nGWPhI/giphy.gif">
-
-=new slide=
 
 <!-- ## Om man deler opp en monolitt i mindre biter så blir bitene mindre en monolitten -->
 
@@ -83,7 +88,6 @@ Dette der en veldig god måte å starte en microfrontend reise på. Du har en st
 
 <!-- <img src="https://media.giphy.com/media/lJ0JGfNBrRWJVCRChd/giphy.gif"> -->
 
-Note:
 Alt er letter med en mindre kodebase
 
 - Navigere
@@ -110,31 +114,34 @@ Uansett hvordan man ender opp med å gjøre det så må man lage en explisitt ko
 
 Siden kodebasen er mindre vil også linting, testing og bygging ta kortere tid.
 
-=new slide=
-
 ## Autonome team
-
-Note:
 
 - Det eneste møtet man trenger å være med på er standup
 - Hele kodebasen eies av ett team krav til publisering
-
-=new slide=
 
 ## Uavhengig publisering
 
 <img src="https://media.giphy.com/media/uFtywzELtkFzi/giphy.gif">
 
-Note:
 Vær microfronend kan publiseres vær for seg. Dette reduserer størrelsen på endringen i vær publisering og reduserer risikoen for feil. Det blir også typisk mindre tid mellom publiseringen. Altså blir det kortere tid fra en utvikler jobbet med koden til man finner ut at det var noen galt. Når det er kort tid siden du utviklet noe så er det mye lettere å sette seg inn i koden igjen og rasker å fikse feilen.
-
-=new slide=
 
 ## Passer micro frontend for deg
 
 Flere team skal jobbe på samme frontend
 
-Note:
-
 - Du er stor organisasjon som skal samarbeide om 1 frontend
 - Du har en monolitt som er vanskelig å videreutvikle
+
+=new slide=
+
+<h2 class="underline">Kort oppsummert<span class="dot">.</span></h2>
+
+<div tagCloud>
+Kodebaser
+Team
+Teknologi
+Publiseringsprosesser
+</div>
+
+Note:
+Og sørge for at kodebaser, team, teknologi og publiserings prosesser har evnen til å operer og utvikle seg uavhengig av hverandre uten for mye koordinasjon.
