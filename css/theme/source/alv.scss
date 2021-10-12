@@ -101,6 +101,10 @@ $alvYellow: #eabb26;
   margin-bottom: 50px;
 }
 
+.dot {
+  color: $alvYellow;
+}
+
 .underline::after {
   content: "";
   width: 33%;
@@ -111,6 +115,23 @@ $alvYellow: #eabb26;
   position: absolute;
   left: 33%;
   margin-top: -8px;
+}
+
+.launch-button {
+  background-color: $alvYellow; /* Green */
+  border: none;
+  font-weight: bold;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #d6a710;
+  }
 }
 
 /*

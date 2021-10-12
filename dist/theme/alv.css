@@ -400,6 +400,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
   margin-bottom: 50px;
 }
 
+.dot {
+  color: #eabb26;
+}
+
 .underline::after {
   content: "";
   width: 33%;
@@ -410,6 +414,23 @@ section.has-light-background, section.has-light-background h1, section.has-light
   position: absolute;
   left: 33%;
   margin-top: -8px;
+}
+
+.launch-button {
+  background-color: #eabb26;
+  /* Green */
+  border: none;
+  font-weight: bold;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.launch-button:hover {
+  background-color: #d6a710;
 }
 
 /*
