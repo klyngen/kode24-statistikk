@@ -1,36 +1,32 @@
-## Hva er behovet for microfrontends
+## Hva er micro frontend?
 
 Note:
 
-- [ ] Løsningen på et organisatorisk problem
-- [ ] bli kvitt liste slide
-- [ ] Bedre gjennomgang per punkt
+- Før vi kunne sette igang med microfrontend så måtte vi finne ut av hva det egentlig er.
+- Det svaret vi fant var at det er
 
 =new slide=
 
 <!-- <img src="https://media.giphy.com/media/ukMiDlCmdv2og/giphy.gif" width="80%"/> -->
 
-<!-- =new slide= -->
-
 ## En løsning på et organisatorisk problem
 
 <!-- TODO: Understrek og punktum-->
 
-Hvordan får vi skalert frontend utvikling?
+Hvordan får vi skalert frontend-utvikling?
 
 Note:
 
-- Oppretholde hastighet
+- Etterhvert som frontendene våre blir større og større så blir utviklingen av nye funksjonaliteter vanskeliger og vanskeliger
+- Alle Endringer blir mer komplisert
+- Refaktoreringer krever mere koordinering utover i organisasjonen
+- Testene tar lengere tid å kjøre
+- Publisering krever møter og koordinering med flere andre team
 
-Å skalere frontend utvikling slik at mange team kan jobbe sammen om ett stort og komplekst produkt.
-
-Altså er det overordnede målet med microfrontends et organisatorisk problem. Et team med utviklere har en maks størrelse før 1 ekstra utvikler ikke lenger betyr 1 ekstra produksjon.
-
-=new slide=
+- Vi drømmer oss tilbake til den tiden da alle beslutninger kunne gjøres innad i teamet
+- Og Pulisering var noe vi gjorde når vi var ferdig med en ny funksjonalitet
 
 ## Skaleringsproblemene
-
-Note:
 
 - Endringer blir vanskeligere
 - Refaktorering blir vanskeligere
@@ -48,9 +44,17 @@ Det er flere grunner til dette. De problemene microfrontends prøver å løse er
 
 =new slide=
 
-## Microfronend til unnsetning
+## Micro frontend til unnsetning
 
-<img src="https://media.giphy.com/media/mMmr83fKDHok4ihdrI/giphy.gif">
+<div class="r-stack">
+  <img class="fragment fade-in-then-out" src="https://media.giphy.com/media/mMmr83fKDHok4ihdrI/giphy.gif">
+  <p style="font-size:10rem" class="fragment fade-in">👌</p>
+</div>
+
+Note:
+
+- Alle disse problemene har vi jo hørt at backend har vært igjennom
+- I backend kan man dele opp sine enorme monolitter i microserviser
 
 =new slide=
 
@@ -126,7 +130,7 @@ Vær microfronend kan publiseres vær for seg. Dette reduserer størrelsen på e
 
 =new slide=
 
-## Passer microfrontend for deg
+## Passer micro frontend for deg
 
 Flere team skal jobbe på samme frontend
 
