@@ -97,6 +97,10 @@ $alvYellow: #eabb26;
   }
 }
 
+.reveal .underline {
+  margin-bottom: 50px;
+}
+
 .underline::after {
   content: "";
   width: 33%;
@@ -104,6 +108,9 @@ $alvYellow: #eabb26;
   background-color: $alvYellow;
   display: block;
   margin-bottom: 20px;
+  position: absolute;
+  left: 33%;
+  margin-top: -8px;
 }
 
 /*
