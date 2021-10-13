@@ -1,14 +1,14 @@
-<h1 class="r-fit-text">Organisatoriske fallgruver</h1>
+<h1 class="r-fit-text">Organisatoriske fallgruver<span class="dot">.</span></h1>
 
 =new slide=
 
-## Vi bruker micro frontender
+## Vi bruker micro frontender<span class="dot">.</span>
 
 🥂 <!-- .element: style="font-size:10rem" -->
 
 =new slide=
 
-## Men utviklingen går ikke fortere
+## Men utviklingen går ikke fortere<span class="dot">.</span>
 
 😳 <!-- .element: style="font-size:10rem" -->
 
@@ -21,6 +21,7 @@ Note:
 =new slide=
 
 ## Så hva må vi som utviklere passe på?
+
 <div class="underline"></div>
 
 Unngå å bli avhengig av folk i andre team‼️
@@ -51,3 +52,17 @@ Frontenden må deles opp på de grensene der det er minst komunikasjon
 - - Hvorfor
   - Does and donts
     - Hvordan høste fordelen
+
+=new slide=
+
+## Kommunikasjon<span class="dot">.</span>
+
+<div class="underline"></div>
+
+Sett av tid til å definere og automatisere kontraktene mellom microfrontendene
+
+Note:
+
+- Det bli veldig fort slik at man bruker session storage, url eller custom events og at disse byggenner å krangle med hverandre
+- Så sett av tid til å automatisere og dokumentere apiene mellom microfrontendene. Slik at når en microfrontend ønsker å fargelegge en node i 3d modelle. Så kan teamet bare lese igjennom hvordan og hva man kan kommunisere for at det skal skje. Og man vet sikkert at det ikke kolliderer med noen annen kommunikasjon
+
