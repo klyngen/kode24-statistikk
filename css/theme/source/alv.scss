@@ -139,9 +139,10 @@ $alvYellow: #eabb26;
   }
 }
 
-.emoji-list {
+.reveal .emoji-list {
   padding-left: 0;
-  margin-left: 0 !important;
+  margin-left: 0;
+  list-style: none;
 }
 
 /*
