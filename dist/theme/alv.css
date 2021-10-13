@@ -356,7 +356,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   }
 }
 .reveal .slide-background {
-  background: linear-gradient(48deg, rgba(2, 0, 36, 0.9) 0%, rgba(6, 24, 56, 0.9) 35%, rgba(26, 57, 112, 0.9) 100%);
+  background: linear-gradient(48deg, #020024 0%, rgba(6, 24, 56, 0.95) 35%, #1a3970 100%);
 }
 
 .reveal h3,

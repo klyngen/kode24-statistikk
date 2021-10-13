@@ -48,9 +48,9 @@ $alvYellow: #eabb26;
   .slide-background {
     background: linear-gradient(
       48deg,
-      rgba(2, 0, 36, 0.9) 0%,
-      rgba(6, 24, 56, 0.9) 35%,
-      rgba(26, 57, 112, 0.9) 100% /*TODO: Maybe add less background image*/
+      rgba(2, 0, 36, 1) 0%,
+      rgba(6, 24, 56, 0.95) 35%,
+      rgba(26, 57, 112, 1) 100% /*TODO: Maybe add less background image*/
     );
   }
 }
