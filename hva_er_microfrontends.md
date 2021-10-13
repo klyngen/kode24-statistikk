@@ -60,6 +60,12 @@ Note:
   <li>👎 Pakke størrelse</li>
 </ul>
 
+Note:
+
+- Vær microfrontend må ha sin egen server
+- Å utvikle en microfrontend lokalt uten plattformen vil være forskjellig fra når den kjører i plattformen.
+- Utvikler man microfronender med ett rammeverket som React må hele react bundles med vær microfronend for å oppretholde inkapsuleringen
+
 =new slide=
 
 <h2>Microfrontend-lovnader<span class="dot">.</span></h2>
