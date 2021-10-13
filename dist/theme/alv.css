@@ -375,6 +375,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal h1,
 .reveal h2 {
   color: #fff;
+  margin-bottom: 30px;
 }
 
 .alvlogo {
@@ -402,16 +403,16 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 .dot {
   color: #eabb26;
-  font-size: 170%;
   font-family: serif;
   line-height: 0px;
-  margin-left: -10px;
+  margin-left: -2px;
+  font-weight: bold;
 }
 
 .underline::after {
   content: "";
   width: 33%;
-  height: 8px;
+  height: 5px;
   background-color: #eabb26;
   display: block;
   margin-bottom: 20px;
@@ -434,7 +435,12 @@ section.has-light-background, section.has-light-background h1, section.has-light
   cursor: pointer;
 }
 .launch-button:hover {
-  background-color: #d6a710;
+  background-color: #be950e;
+}
+
+.emoji-list {
+  padding-left: 0;
+  margin-left: 0 !important;
 }
 
 /*

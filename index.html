@@ -27,7 +27,7 @@
 
         <section data-background-image="./2.jpg">
           <section>
-            <h2 class="underline">Hvor er vi i dag</h2>
+              <h2 class="">Hvor er vi i dag<span class="dot">.</span> </h2>
             <!--<svg
               width="62"
               height="62"
@@ -73,7 +73,7 @@
           data-charset="utf8"
         ></section>
         <section data-background-image="./5.jpg">
-          <section><h1>Demo</h1></section>
+          <section><h1>Demo<span class="dot">.</span></h1></section>
           <section
             data-markdown="mini_demo.md"
             data-separator="^=new slide="
@@ -164,23 +164,22 @@
             target.appendChild(new element());
             setTimeout(() => {
                 toggleConstructability();
-            }, 20000);
+            }, 30000);
+            constructabilityToggled = true;
         }
 
      function removeConstructability() {
          const elements = document.getElementsByTagName(constructabilityTagName)[0].remove();
+         constructabilityToggled = false;
      }
 
      function toggleConstructability() {
          if (constructabilityToggled) {
              removeConstructability();
-         } else {
-             openConstructability();
+             return;
          }
-         constructabilityToggled = !constructabilityToggled;
+         openConstructability();
      }
-
-     document.getElementById("runbutton").addEventListener('click', () => toggleConstructability());
 
     </script>
     <div class="alvlogo">

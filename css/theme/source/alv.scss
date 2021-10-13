@@ -73,6 +73,7 @@ $alvYellow: #eabb26;
 .reveal h1,
 .reveal h2 {
   color: #fff;
+  margin-bottom: 30px;
 }
 
 .alvlogo {
@@ -103,16 +104,16 @@ $alvYellow: #eabb26;
 
 .dot {
   color: $alvYellow;
-  font-size: 170%;
   font-family: serif;
   line-height: 0px;
-  margin-left: -10px;
+  margin-left: -2px;
+  font-weight: bold;
 }
 
 .underline::after {
   content: "";
   width: 33%;
-  height: 8px;
+  height: 5px;
   background-color: $alvYellow;
   display: block;
   margin-bottom: 20px;
@@ -134,8 +135,13 @@ $alvYellow: #eabb26;
   cursor: pointer;
 
   &:hover {
-    background-color: #d6a710;
+    background-color: #be950e;
   }
+}
+
+.emoji-list {
+  padding-left: 0;
+  margin-left: 0 !important;
 }
 
 /*

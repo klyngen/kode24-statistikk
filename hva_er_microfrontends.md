@@ -40,9 +40,9 @@ Note:
 
 =new slide=
 
-<h2 class="underline">Micro frontend utfordringer<span class="dot">.</span></h2>
+<h2 class="">Micro frontend-utfordringer<span class="dot">.</span></h2>
 
-<ul style="list-style: none">
+<ul class="emoji-list" style="list-style: none">
   <li>👎 Operationel kompleksitet</li>
   <li>👎 Forskjell mellom miljøer</li>
   <li>👎 Pakke størrelse</li>
@@ -50,9 +50,9 @@ Note:
 
 =new slide=
 
-<h2 class="underline">Micro frontend lovnader<span class="dot">.</span></h2>
+<h2 class="">Micro frontend-lovnader<span class="dot">.</span></h2>
 
-<ul style="list-style: none">
+<ul class="emoji-list" style="list-style: none">
   <li>👍 Uavhengig publisering</li>
   <li>👍 Inkrementelle oppgraderinger</li>
   <li>👍 Autonome team</li>
@@ -131,7 +131,7 @@ Flere team skal jobbe på samme frontend
 
 =new slide=
 
-<h2 class="underline">Kort oppsummert<span class="dot">.</span></h2>
+<h2 class="">Kort oppsummert<span class="dot">.</span></h2>
 
 <div tagCloud>
 Kodebaser

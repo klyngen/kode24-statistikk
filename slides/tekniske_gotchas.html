@@ -1,62 +1,64 @@
+<section>
+            <h2 class="r-fit-text underline">TEKNISKE problemer</h2>
+</section>
 
-            <h1 class="r-fit-text">TEKNISKE GOTCHAS</h1>
-            <section>
-                <h3>Enkapsulert, meeeeeeen</h3>
-                <aside class="notes">
-                    <p>Det er unntak fra enkapsuleringen</p>
-                    <p>Ingen verdi spesifisert for størrelsen</p>
-                    <p>Agen default ble valgt</p>
-                </aside>
-                <ul class="fragment">
-                    <li>:root, :host, ::part(element)</li>
-                    <li>Moder-applikasjonen vil alltid ha siste ordet</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Bibliotekene dine har ukjente synder</h3>
-                <aside class="notes">
-                    <p>Når du setter i gang med web-komponenter</p>
-                    <p>Ting vil slutte å fungere, og det er flere grunner til det</p>
-                </aside>
-                  <div class="fragment fade-in-then-out">
-                    <pre>
-                        <code>
-    document.getElementBy(Id|TagName|Class)
-                        </code>
-                    </pre>
-                    Har alltid fungert, men ikke nå lenger
-                  </div>
-                  <div class="r-stack">
-                    <div class="fragment fade-in-then-out">
-                        Enkelte biblioteker vil krangle i runtime
-                    </div>
-                    <div class="fragment">
-                        URL, SessionStorage, window, custom-events
-                    </div>
-                  </div>
-            </section>
-            <section>
-                <h3>Kommunikasjon mellom frontends</h3>
-                <div class="r-stack">
-                  <div class="fragment fade-in">
-                      <div class="fragment fade-in-then-out">
-                          Kan gjøres på veldig mange måter
-                          <ul>
-                              <li>Custom Events</li>
-                              <li>Meldingsbusser</li>
-                              <li>URL</li>
-                              <li>sessionStorage</li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="fragment fade-in-then-out">
-                      <h2>Fleksibilitet og svake kontrakter skaper kaos</h2>
-                  </div>
-                  <div class="fragment fade-in-then-out">
-                       <iframe src="https://giphy.com/embed/nrXif9YExO9EI" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-                  </div>
-                  <div class="fragment">
-                      <h2>Definer kontraktene tidlig</h2>
-                  </div>
-                </div>
-            </section>
+<section>
+    <h3>Enkapsulert, meeeeeeen</h3>
+    <aside class="notes">
+        <p>Det er unntak fra enkapsuleringen</p>
+        <p>Ingen verdi spesifisert for størrelsen</p>
+        <p>Agen default ble valgt</p>
+    </aside>
+    <ul class="fragment">
+        <li>:root, :host, ::part(element)</li>
+        <li>Moder-applikasjonen vil alltid ha siste ordet</li>
+    </ul>
+</section>
+<section>
+    <h3>Bibliotekene dine har ukjente synder</h3>
+    <aside class="notes">
+        <p>Når du setter i gang med web-komponenter</p>
+        <p>Ting vil slutte å fungere, og det er flere grunner til det</p>
+    </aside>
+      <div class="fragment fade-in-then-out">
+        <pre>
+            <code>
+  document.getElementBy(Id|TagName|Class)
+            </code>
+        </pre>
+        Har alltid fungert, men ikke nå lenger
+      </div>
+      <div class="r-stack">
+        <div class="fragment fade-in-then-out">
+            Enkelte biblioteker vil krangle i runtime
+        </div>
+        <div class="fragment">
+            URL, SessionStorage, window, custom-events
+        </div>
+      </div>
+</section>
+<section>
+    <h3>Kommunikasjon mellom frontends</h3>
+    <div class="r-stack">
+      <div class="fragment fade-in">
+          <div class="fragment fade-in-then-out">
+              Kan gjøres på veldig mange måter
+              <ul>
+                  <li>Custom Events</li>
+                  <li>Meldingsbusser</li>
+                  <li>URL</li>
+                  <li>sessionStorage</li>
+              </ul>
+          </div>
+      </div>
+      <div class="fragment fade-in-then-out">
+          <h2>Fleksibilitet og svake kontrakter skaper kaos</h2>
+      </div>
+      <div class="fragment fade-in-then-out">
+            <iframe src="https://giphy.com/embed/nrXif9YExO9EI" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </div>
+      <div class="fragment">
+          <h2>Definer kontraktene tidlig</h2>
+      </div>
+    </div>
+</section>
