@@ -1,64 +1,144 @@
 <section>
   <h2 class="r-fit-text underline">TEKNISKE utfordringer</h2>
+  <aside class="notes">
+      <ul>
+          <li>Nå hadde jo jeg god fremgang på utviklingen</li>
+          <li>Hadde tro på enkapsuleringen, men ting fungerer ikke som forventet</li>
+          <li>Når jeg puttet micro-frontenden inn i moder-applikasjonen</li>
+      </ul>
+  </aside>
 </section>
 
 <section>
-    <h3>Enkapsulert, meeeeeeen</h3>
+    <h2>Enkapsulering<span class="dot">.</span></h2>
     <aside class="notes">
         <p>Det er unntak fra enkapsuleringen</p>
         <p>Ingen verdi spesifisert for størrelsen</p>
-        <p>Agen default ble valgt</p>
+        <p>Agent default ble valgt</p>
     </aside>
-    <ul class="fragment">
-        <li>:root, :host, ::part(element)</li>
-        <li>Moder-applikasjonen vil alltid ha siste ordet</li>
-    </ul>
+    <div class="fragment">
+        <blockquote>
+            Om ingen ting er spesifisert faller man tilbake til agent defaults
+        </blockquote>
+    </div>
+        <pre class="fragment">
+            <code>
+ :root, :host, ::part(element) {
+    /* These selectors can override shadow-root css styles */
+  }
+            </code>
+        </pre>
 </section>
 <section>
-    <h3>Bibliotekene dine har ukjente synder</h3>
+    <h2>Enkapsulering<span class="dot">.</span></h2>
+    <pre>
+        <code data-line-numbers="3-5|15-18|20-22|24-26">
+<style>
+  :root {
+      --p-color: green;
+  }
+</style>
+
+<script>
+   class Test extends HTMLElement {
+    constructor() {
+      super();
+      const shadowRoot = this.attachShadow({ mode: "open" });
+      shadowRoot.innerHTML = `
+        <style>
+
+          :host {
+            --p-color: blue;
+          }
+
+					:host p {
+          	color: red;
+          }
+
+          p {
+            color: var(--p-color);
+          }
+
+          p {
+            color: yellow;
+          }
+        </style>
+        <p>Yay! I have color</p>
+      `;
+    }
+  }
+
+  customElements.define('test-element', Test);
+</script>
+        </code>
+    </pre>
+</section>
+<section>
+    <h2>Enkapsulering<span class="dot">.</span></h2>
+    <div class="fragment">
+        <test-element></test-element>
+    </div>
+    <!-- TODO: Enda bedre eksempel her -->
+    <div class="fragment">
+                <pre>
+                    <code>
+  /* Siste plass */
+  :root {
+    --p-color: green;
+  }
+  /* Andre plass */
+  :host {
+    --p-color: blue;
+  }
+  /* Første plass */
+  :host p {
+    --p-color: red;
+  }
+                    </code>
+                </pre>
+        </ol>
+    </div>
+</section>
+<section>
+    <h2>ShadowRoot<span class="dot">.</span> </h2>
     <aside class="notes">
         <p>Når du setter i gang med web-komponenter</p>
         <p>Ting vil slutte å fungere, og det er flere grunner til det</p>
     </aside>
-      <div class="fragment fade-in-then-out">
+      <div class="fragment">
         <pre>
             <code>
   document.getElementBy(Id|TagName|Class)
             </code>
         </pre>
-        Har alltid fungert, men ikke nå lenger
       </div>
-      <div class="r-stack">
-        <div class="fragment fade-in-then-out">
-            Enkelte biblioteker vil krangle i runtime
-        </div>
-        <div class="fragment">
-            URL, SessionStorage, window, custom-events
-        </div>
+      <div class="fragment">
+        <pre>
+            <code>
+  const element = document.getElementById("web-component-id")
+  element.shadowRoot.getElementById("whatever I might need");
+            </code>
+        </pre>
       </div>
 </section>
 <section>
-    <h3>Kommunikasjon mellom frontends</h3>
-    <div class="r-stack">
-      <div class="fragment fade-in">
-          <div class="fragment fade-in-then-out">
-              Kan gjøres på veldig mange måter
-              <ul>
-                  <li>Custom Events</li>
-                  <li>Meldingsbusser</li>
-                  <li>URL</li>
-                  <li>sessionStorage</li>
-              </ul>
-          </div>
-      </div>
-      <div class="fragment fade-in-then-out">
-          <h2>Fleksibilitet og svake kontrakter skaper kaos</h2>
-      </div>
-      <div class="fragment fade-in-then-out">
-            <iframe src="https://giphy.com/embed/nrXif9YExO9EI" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-      </div>
-      <div class="fragment">
-          <h2>Definer kontraktene tidlig</h2>
-      </div>
+    <aside class="notes">
+        <ul>
+            <li>Veldig situasjons-bestemt hva som er løsningen</li>
+            <li>Kan hende enkelte biblioteker må ha samme versjon</li>
+            <li>Har opplevd hvordan forskjellige versjoner av autentiserings-biblioteker har skapt trøbbel</li>
+        </ul>
+    </aside>
+    <h2>Globale ressurser<span class="dot">.</span> </h2>
+    <div tagCloud>
+        sessionStorage
+        localStorage
+        URL
+        custom-events
+        window
+        DOM
     </div>
+</section>
+<section>
+
 </section>

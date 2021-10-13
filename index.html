@@ -188,5 +188,34 @@
         alt="Alv logo"
       />
     </div>
+<script type="text/javascript">
+
+  class Test extends HTMLElement {
+    constructor() {
+      super();
+      const shadowRoot = this.attachShadow({ mode: "open" });
+      shadowRoot.innerHTML = `
+        <style>
+
+          :host {
+            --p-color: blue;
+          }
+
+					:host p {
+          	color: red;
+          }
+
+          p {
+            color: var(--p-color);
+          }
+        </style>
+        <p>Yay! I have color</p>
+      `;
+    }
+  }
+
+customElements.define('test-element', Test);
+    </script>
   </body>
+
 </html>
