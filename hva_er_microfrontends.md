@@ -9,7 +9,9 @@ Note:
 
 <!-- <img src="https://media.giphy.com/media/ukMiDlCmdv2og/giphy.gif" width="80%"/> -->
 
-## En av løsningene på<span class="dot">.</span></h2> <span style="font-size: 4rem;">👇</span>
+## En av løsningene på<span class="dot">.</span></h2>
+
+<span style="font-size: 4rem;">👇</span>
 
 <!-- TODO: Understrek og punktum-->
 
@@ -42,7 +44,7 @@ Note:
 
 <h2 class="">Micro frontend-utfordringer<span class="dot">.</span></h2>
 
-<ul class="emoji-list" style="list-style: none">
+<ul class="emoji-list">
   <li>👎 Operationel kompleksitet</li>
   <li>👎 Forskjell mellom miljøer</li>
   <li>👎 Pakke størrelse</li>
@@ -52,7 +54,7 @@ Note:
 
 <h2 class="">Micro frontend-lovnader<span class="dot">.</span></h2>
 
-<ul class="emoji-list" style="list-style: none">
+<ul class="emoji-list">
   <li>👍 Uavhengig publisering</li>
   <li>👍 Inkrementelle oppgraderinger</li>
   <li>👍 Autonome team</li>

@@ -1,3 +1,7 @@
+<h1 class="r-fit-text">Organisatoriske fallgruver</h1>
+
+=new slide=
+
 ## Vi bruker micro frontender
 
 🥂 <!-- .element: style="font-size:10rem" -->
@@ -6,7 +10,7 @@
 
 ## Men utviklingen går ikke fortere
 
-😂 <!-- .element: style="font-size:10rem" -->
+😳 <!-- .element: style="font-size:10rem" -->
 
 Note:
 
@@ -16,19 +20,19 @@ Note:
 
 =new slide=
 
-## Så hva må vi som utviklere passe på for å ikke ødelegge?
+## Så hva må vi som utviklere passe på?
+<div class="underline"></div>
 
-Unngå å bli avhengig av folk i andre team
+Unngå å bli avhengig av folk i andre team‼️
 
 Note:
 
+- Flere må løse de samme problemene hver for seg.
 - Unngå felles biblioteker
 - Det er vansklig om ikke umulig å forrutse fremtiden.
   - Så det er letter å lage flere accordians en å lage en som dekker alle usecases som man ikke vet hva er enda.
 - Om du må ha felles biblioteker, så gjør det som ordentlig prosjekter med nok resureser til å ligge langt forran kravene til de som trenger biblioteket
 - Som dere helt sikkert begynner å se så har dette både fordeler og ulemper:
-
-- Flere må løse de samme problemene hver for seg.
 
 - Duplikasjon av avhengigheter ( React, Vue, Angular )
 - Brukere må laste ned den samme koden flere ganger i samme app.
