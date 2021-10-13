@@ -47,11 +47,12 @@ Note:
 
 Note:
 
-- Vi vil også dele opp vår monolitt i mindre isolerte deler.
+- Vi kan vel gjøre det samme og kalle det microfronend
+- Vi kan dele opp vår frontend i mindre deler og definere kontrakter for hvordan de skal komunisere
 
 =new slide=
 
-<h2 class="">Microfrontend-utfordringer<span class="dot">.</span></h2>
+<h2>Microfrontend-utfordringer<span class="dot">.</span></h2>
 
 <ul class="emoji-list">
   <li>👎 Operationel kompleksitet</li>
@@ -61,7 +62,7 @@ Note:
 
 =new slide=
 
-<h2 class="">Microfrontend-lovnader<span class="dot">.</span></h2>
+<h2>Microfrontend-lovnader<span class="dot">.</span></h2>
 
 <ul class="emoji-list">
   <li>👍 Uavhengig publisering</li>
