@@ -1,45 +1,79 @@
  <section>
-<h2 class="">Velg teknologi</h2>
+<h2 class="underline">Valg av teknologi</h2>
 <img src="micro-frontend-layout.png" alt="" />
 <aside class="notes">
-    <p>Man kan gjøre backend med server side rendering</p>
-    <p>Man kan også blande frontend og backend</p>
-    <p>TIng syes sammen begge steder</p>
-    <p>Det kan ikke jeg noe om</p>
-    <p>Fokus på frontend-veien til micro-frontends</p>
-    <p>La oss se på et par alternativer</p>
+    <ul>
+        <li>Når vi fikk denne oppgaven</li>
+        <li>Man kan også blande frontend og backend</li>
+        <li>Ting syes sammen begge steder</li>
+        <li>Hvilke behov, og hvilke brukermasser har man</li>
+        <li>Det kan ikke jeg noe om</li>
+        <li>Fokus på frontend-veien til micro-frontends</li>
+        <li>La oss se på et par alternativer</li>
+    </ul>
 </aside>
+</section>
+<section>
+    <aside class="notes">
+        <ul>
+            <li>Hva ser jeg etter</li>
+            <li>Hva slags rammeverk kunden vår bruker i fremtiden er noe vi ikke vet</li>
+            <li>Måtte fungere med angular</li>
+        </ul>
+    </aside>
+    <h2 class="">Valg av frontend teknologi<span class="dot">.</span></h2>
+    <ul style="list-style: none">
+        <li>🔒 Enkapsulering</li>
+        <li>👐 Framework agnostic</li>
+    </ul>
 </section>
 <section>
     <aside class="notes">
         Hvor mange har åpnet spotify
     </aside>
-    <h2 class="r-fit-text">IFrames!? Er du seriøs!?</h2>
+        <h2 class="underline">Iframes</h2>
     <div class="r-stack">
+        <h2 class="fragment fade-in-then-out">Er du seriøs!?</h2>
         <h3 class="fragment fade-in-then-out r-fit-text">JA</h3>
-        <div class="fragment fade-in-then-out">
-            <h4>Positivt</h4>
-            <div tagCloud>
-                ENKELT
-                UTPRØVD
-                ENKAPSULERING
-                STØTTES OVER ALT
-            </div>
-        </div>
-        <div class="fragment fade-in-then-out">
-            <h5>Baksider</h5>
-            <div tagCloud>
-                ENKAPSULERING
-                SIKKERHET
-                BRUKERVENNLIGHET
-                NAVIGERING
-            </div>
-        </div>
-
-        <div class="fragment fade-in">
-            <iframe style="height:400px; width: 400px" scrolling="no" frameborder="0" src="https://www.vg.no"></iframe>
-        </div>
     </div>
+</section>
+<section>
+    <h2 class="underline">iframes positivt</h2>
+    <aside class="notes">
+        <ul>
+            <li>Hva er Iframes. Tag som åpner en annen nettside som et vindu</li>
+            <li>Helt eget dokument gjør at stiler ikke lekker inn i iframen</li>
+            <li>Enkapsuleringen er ekstremt god</li>
+            <li>Få teknologier har så fullstendig nettleser-støtte som iframes</li>
+        </ul>
+    </aside>
+    <ul style="list-style: none">
+        <li>👍 Enkelt å komme i gang</li>
+        <li>👍 Godt utprøvd teknologi</li>
+        <li>👍 Enkapsulering</li>
+        <li>👍 Fungerer i alle nettlesere</li>
+    </ul>
+    <div class="fragment">
+        <pre>
+            <code>
+    <iframe src="awesome.microfrontend.com"></iframe>
+            </code>
+        </pre>
+    </div>
+</section>
+<section>
+    <aside class="notes">
+        <ul>
+            <li>Enkapsuleringen er kanskje litt for god</li>
+            <li>Vanskelig å implementere gode interaksjoner mellom moder-app og micro-frontend</li>
+            <li>Teknologien er en kjent angreps-vektor</li>
+        </ul>
+    </aside>
+    <h2 class="underline">iframes baksider</h2>
+    <ul style="list-style: none">
+        <li>👎 Brukerinteraksjon</li>
+        <li>👎 Sikkerhet</li>
+    </ul>
 </section>
 <section>
     <h2>Web Components</h2>
