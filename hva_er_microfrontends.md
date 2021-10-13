@@ -71,18 +71,20 @@ Note:
 <h2>Microfrontend-lovnader<span class="dot">.</span></h2>
 
 <ul class="emoji-list">
-  <li>👍 Uavhengig publisering</li>
-  <li>👍 Inkrementelle oppgraderinger</li>
-  <li>👍 Autonome team</li>
   <li>👍 Enkle uavhengige codebaser</li>
+  <li>👍 Autonome team</li>
+  <li>👍 Inkrementelle oppgraderinger</li>
+  <li>👍 Uavhengig publisering</li>
 </ul>
 
 Note:
 
 - Bytte ut stor og komplekse kodebaser med mere håndterbare størrelser
-- En mere skalerbare organisasjon via løsrevne autonome team
+  - Lettere refaktorering på en mere incrementell måte
+- En mere skalerbar organisasjon via løsrevne autonome team
+  - Lett å bytte ut en del av applikasjonen osm bruker noe nytt
 - Oppgradering og oppdatering av avhengigheter uten å påvirke mange andre
-- Lettere refaktorering på en mere incrementell måte
+- Publisere ofte og uavhengig av resten av de som jobber i frontenden
 
 - Do you have enough automation in place to feasibly provision and manage the additional required infrastructure?
 - Will your frontend development, testing, and release processes scale to many applications?
