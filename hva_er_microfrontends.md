@@ -13,14 +13,12 @@ Note:
 
 <span style="font-size: 4rem;">👇</span>
 
-<!-- TODO: Understrek og punktum-->
-
 Hvordan får vi skalert frontend-utvikling?
 
 Note:
 
+- Applikasjonenen er har blit større med rammeverkene
 - Flere team jobber på samme frontend
-- Ny funksjonalitet blir vanskeliger og vanskeliger
 - Endringer blir mer komplisert
 - Refaktoreringer krever mere koordinering mellom team
 - Testene tar lengere tid å kjøre

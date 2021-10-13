@@ -27,7 +27,7 @@
 
         <section data-background-image="./2.jpg">
           <section>
-              <h2 class="">Hvor er vi i dag<span class="dot">.</span> </h2>
+            <h2 class="">Status i dag<span class="dot">.</span></h2>
             <!--<svg
               width="62"
               height="62"
@@ -45,15 +45,26 @@
             </svg>
             <p>Aize og Twin Explorer</p>-->
             <aside class="notes">
-                <h5>Om aize</h5>
-                <p>Aize er ett nyopprettet softwareselsakp. De har en plattform for digitale tvillinger, der jeg og Truls</p>
-                <p>På høyresiden har vi constructability engine, validerer en 3D-modell mot et sett med regler</p>
-                <p>moder applikasjonen twin-explorer</p>
-                <p>3D vindu for å vise frem modeller</p>
-                <p>Til høyre har vi Constructability Engine levert fra mitt team</p>
-                <p>VIS FREM HIGHLIGHTING</p>
-                <p>Micro frontend kommuniserer med en 3D-modell gjennom moder applikasjonen</p>
-                <p>Nå skal vi prate med dere om hvordan vi kom hit</p>
+              <h5>Om aize</h5>
+              <p>
+                Aize er ett nyopprettet softwareselsakp. De har en plattform for
+                digitale tvillinger, der jeg og Truls
+              </p>
+              <p>
+                På høyresiden har vi constructability engine, validerer en
+                3D-modell mot et sett med regler
+              </p>
+              <p>moder applikasjonen twin-explorer</p>
+              <p>3D vindu for å vise frem modeller</p>
+              <p>
+                Til høyre har vi Constructability Engine levert fra mitt team
+              </p>
+              <p>VIS FREM HIGHLIGHTING</p>
+              <p>
+                Micro frontend kommuniserer med en 3D-modell gjennom moder
+                applikasjonen
+              </p>
+              <p>Nå skal vi prate med dere om hvordan vi kom hit</p>
             </aside>
           </section>
         </section>
@@ -73,7 +84,9 @@
           data-charset="utf8"
         ></section>
         <section data-background-image="./5.jpg">
-          <section><h1>Demo<span class="dot">.</span></h1></section>
+          <section>
+            <h1>Demo<span class="dot">.</span></h1>
+          </section>
           <section
             data-markdown="mini_demo.md"
             data-separator="^=new slide="
@@ -134,11 +147,14 @@
     <script type="text/javascript">
       window.process = {
         env: {
-          NODE_DEBUG: 'something'
-        }
-      }
+          NODE_DEBUG: "something",
+        },
+      };
     </script>
-    <script src="http://localhost:4201/webcomponent.js" type="text/javascript"></script>
+    <script
+      src="http://localhost:4201/webcomponent.js"
+      type="text/javascript"
+    ></script>
     <script src="plugin/highlight/highlight.js"></script>
     <script>
       // More info about initialization & config:
@@ -146,6 +162,7 @@
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
+        showNotes: true,
 
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
@@ -161,32 +178,33 @@
       });
     </script>
 
-    <script type="text/javascript" >
-        const constructabilityTagName = "constructability-engine";
-        let constructabilityToggled = false;
-        function openConstructability() {
-            let target = document.getElementById("constructability-target");
-            let element = window.customElements.get(constructabilityTagName);
-            target.appendChild(new element());
-            setTimeout(() => {
-                toggleConstructability();
-            }, 30000);
-            constructabilityToggled = true;
+    <script type="text/javascript">
+      const constructabilityTagName = "constructability-engine";
+      let constructabilityToggled = false;
+      function openConstructability() {
+        let target = document.getElementById("constructability-target");
+        let element = window.customElements.get(constructabilityTagName);
+        target.appendChild(new element());
+        setTimeout(() => {
+          toggleConstructability();
+        }, 30000);
+        constructabilityToggled = true;
+      }
+
+      function removeConstructability() {
+        const elements = document
+          .getElementsByTagName(constructabilityTagName)[0]
+          .remove();
+        constructabilityToggled = false;
+      }
+
+      function toggleConstructability() {
+        if (constructabilityToggled) {
+          removeConstructability();
+          return;
         }
-
-     function removeConstructability() {
-         const elements = document.getElementsByTagName(constructabilityTagName)[0].remove();
-         constructabilityToggled = false;
-     }
-
-     function toggleConstructability() {
-         if (constructabilityToggled) {
-             removeConstructability();
-             return;
-         }
-         openConstructability();
-     }
-
+        openConstructability();
+      }
     </script>
     <div class="alvlogo">
       <embed
@@ -194,13 +212,12 @@
         alt="Alv logo"
       />
     </div>
-<script type="text/javascript">
-
-  class Test extends HTMLElement {
-    constructor() {
-      super();
-      const shadowRoot = this.attachShadow({ mode: "open" });
-      shadowRoot.innerHTML = `
+    <script type="text/javascript">
+      class Test extends HTMLElement {
+        constructor() {
+          super();
+          const shadowRoot = this.attachShadow({ mode: "open" });
+          shadowRoot.innerHTML = `
         <style>
 
           :host {
@@ -217,11 +234,10 @@
         </style>
         <p>Yay! I have color</p>
       `;
-    }
-  }
+        }
+      }
 
-customElements.define('test-element', Test);
+      customElements.define("test-element", Test);
     </script>
   </body>
-
 </html>
