@@ -1,4 +1,4 @@
-## Hva er micro frontend?
+## Hva er microfrontend?
 
 Note:
 
@@ -41,7 +41,7 @@ Note:
 
 =new slide=
 
-<h2>Microfronend til unnsetning<span class="dot">.</span></h2>
+<h2>Microfrontend til unnsetning<span class="dot">.</span></h2>
 
 <img src="https://media.giphy.com/media/5BaJ6438Qp6RJQRRQn/giphy.gif" alt="">
 
