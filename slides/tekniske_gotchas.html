@@ -32,78 +32,39 @@
 <section>
     <h2>Enkapsulering<span class="dot">.</span></h2>
     <pre>
-        <code data-line-numbers="3-5|15-18|20-22|24-26">
-<style>
+        <code>
+class MicroFrontendStyles extends HTMLElement {
+  constructor() {
+    super();
+    const shadowRoot = this.attachShadow({ mode: "closed" });
+    shadowRoot.innerHTML = `<p>Micro frontends FTW!</p>`;
+  }
+}
+        </code>
+    </pre>
+    <pre class="fragment">
+        <code>
   :root {
-      --p-color: green;
-  }
-</style>
-
-<script>
-   class Test extends HTMLElement {
-    constructor() {
-      super();
-      const shadowRoot = this.attachShadow({ mode: "open" });
-      shadowRoot.innerHTML = `
-        <style>
-
-          :host {
-            --p-color: blue;
-          }
-
-					:host p {
-          	color: red;
-          }
-
-          p {
-            color: var(--p-color);
-          }
-
-          p {
-            color: yellow;
-          }
-        </style>
-        <p>Yay! I have color</p>
-      `;
-    }
+    color: magenta;
+    font-size: 50px;
   }
 
-  customElements.define('test-element', Test);
-</script>
+  p {
+    color: blue;
+  }
         </code>
     </pre>
 </section>
 <section>
     <h2>Enkapsulering<span class="dot">.</span></h2>
-    <div class="fragment">
-        <test-element></test-element>
-    </div>
-    <!-- TODO: Enda bedre eksempel her -->
-    <div class="fragment">
-                <pre>
-                    <code>
-  /* Siste plass */
-  :root {
-    --p-color: green;
-  }
-  /* Andre plass */
-  :host {
-    --p-color: blue;
-  }
-  /* Første plass */
-  :host p {
-    --p-color: red;
-  }
-                    </code>
-                </pre>
-        </ol>
-    </div>
+    <p style="color: magenta; font-size: 50px">Micro frontends FTW</p>
 </section>
 <section>
     <h2>ShadowRoot<span class="dot">.</span> </h2>
     <aside class="notes">
         <p>Når du setter i gang med web-komponenter</p>
-        <p>Ting vil slutte å fungere, og det er flere grunner til det</p>
+        <p>Du har kanskje denne kommandoen inne i et bibliotek inne i web-komponenten din</p>
+        <p>Det fungerer jo ikke</p>
     </aside>
       <div class="fragment">
         <pre>
@@ -115,11 +76,32 @@
       <div class="fragment">
         <pre>
             <code>
-  const element = document.getElementById("web-component-id")
-  element.shadowRoot.getElementById("whatever I might need");
+  const element = document.getElementById("micro-demo")
+  element.shadowRoot.getElementsByTagName("p");
             </code>
         </pre>
       </div>
+      <div class="fragment">
+          <pre>
+              <code>
+  this.shadowRoot.getElementsByTagName("p");
+              </code>
+          </pre>
+      </div>
+</section>
+<section>
+    <h2>ShadowRoot<span class="dot">.</span> </h2>
+<pre>
+        <code data-line-numbers="5">
+class MicroFrontendStyles extends HTMLElement {
+  constructor() {
+    super();
+    const shadowRoot = this.attachShadow({ mode: "closed" });
+    shadowRoot.innerHTML = `<p>Micro frontends FTW!</p>`;
+  }
+}
+        </code>
+    </pre>
 </section>
 <section>
     <aside class="notes">
@@ -138,7 +120,4 @@
         window
         DOM
     </div>
-</section>
-<section>
-
 </section>
