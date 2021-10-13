@@ -90,6 +90,20 @@ class MicroFrontendStyles extends HTMLElement {
       </div>
 </section>
 <section>
+    <h2>ShadowRoot<span class="dot">.</span> </h2>
+<pre>
+        <code data-line-numbers="5">
+class MicroFrontendStyles extends HTMLElement {
+  constructor() {
+    super();
+    const shadowRoot = this.attachShadow({ mode: "closed" });
+    shadowRoot.innerHTML = `<p>Micro frontends FTW!</p>`;
+  }
+}
+        </code>
+    </pre>
+</section>
+<section>
     <aside class="notes">
         <ul>
             <li>Veldig situasjons-bestemt hva som er løsningen</li>
@@ -106,7 +120,4 @@ class MicroFrontendStyles extends HTMLElement {
         window
         DOM
     </div>
-</section>
-<section>
-
 </section>
