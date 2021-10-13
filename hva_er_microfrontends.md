@@ -19,20 +19,21 @@ Hvordan får vi skalert frontend-utvikling?
 
 Note:
 
-- Etterhvert som frontendene våre blir større og større så blir utviklingen av nye funksjonaliteter vanskeliger og vanskeliger
-- Alle Endringer blir mer komplisert
-- Refaktoreringer krever mere koordinering utover i organisasjonen
+- Flere team jobber på samme frontend
+- Ny funksjonalitet blir vanskeliger og vanskeliger
+- Endringer blir mer komplisert
+- Refaktoreringer krever mere koordinering mellom team
 - Testene tar lengere tid å kjøre
-- Publisering krever møter og koordinering med flere andre team
+- Publisering krever møter og koordinering mellom teamene
 
 - Vi drømmer oss tilbake til den tiden da alle beslutninger kunne gjøres innad i teamet
 - Og Pulisering var noe vi gjorde når vi var ferdig med en ny funksjonalitet
 
 =new slide=
 
-## Micro service har jo løst dette<span class="dot">.</span>
+## Microservicer har jo løst dette<span class="dot">.</span>
 
-<p style="font-size:10rem" class="fragment fade-in">👍</p>
+<p style="font-size:10rem">👍</p>
 
 Note:
 
@@ -42,7 +43,17 @@ Note:
 
 =new slide=
 
-<h2 class="">Micro frontend-utfordringer<span class="dot">.</span></h2>
+<h2>Microfronend til unnsetning<span class="dot">.</span></h2>
+
+<img src="https://media.giphy.com/media/5BaJ6438Qp6RJQRRQn/giphy.gif" alt="">
+
+Note:
+
+- Vi vil også dele opp vår monolitt i mindre isolerte deler.
+
+=new slide=
+
+<h2 class="">Microfrontend-utfordringer<span class="dot">.</span></h2>
 
 <ul class="emoji-list">
   <li>👎 Operationel kompleksitet</li>
@@ -52,7 +63,7 @@ Note:
 
 =new slide=
 
-<h2 class="">Micro frontend-lovnader<span class="dot">.</span></h2>
+<h2 class="">Microfrontend-lovnader<span class="dot">.</span></h2>
 
 <ul class="emoji-list">
   <li>👍 Uavhengig publisering</li>
@@ -83,7 +94,7 @@ Note:
 
 ## Deler man opp kodebasen så blir det flere mindre deler
 
-<img src="https://media.giphy.com/media/vQqeT3AYg8S5O/giphy.gif"> <!-- .element: class="fragment" -->
+<img src="https://media.giphy.com/media/vQqeT3AYg8S5O/giphy.gif">
 
 <!-- <img src="https://media.giphy.com/media/lJ0JGfNBrRWJVCRChd/giphy.gif"> -->
 
