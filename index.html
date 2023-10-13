@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <title>MFR tech talk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>State of frontend</title>
 
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
@@ -14,219 +12,91 @@
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <!-- INTRODUKSJON -->
-        <section
-          data-charset="utf8"
-          data-external="slides/introduksjon.html"
-          data-background-image="./1.jpg"
-        ></section>
+</head>
 
-        <section data-background-image="./2.jpg">
-          <section>
-            <h2 class="">Status i dag<span class="dot">.</span></h2>
-            <!--<svg
-              width="62"
-              height="62"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.4049 11.1902C4.65756 11.1902 0 15.8477 0 21.5951C0 27.3424 4.65756 32 10.4049 32H20.8098V21.5951H10.4049V11.1902Z"
-                fill="#006838"
-              ></path>
-              <path
-                d="M20.8099 0H11.7496C6.00436 0 1.34473 4.65756 1.34473 10.4049H11.7496H20.8099V21.593H31.2148V10.4049C31.2128 4.65963 26.5552 0 20.8099 0Z"
-                fill="#39B54A"
-              ></path>
-            </svg>
-            <p>Aize og Twin Explorer</p>-->
-            <aside class="notes">
-              <h5>Om aize</h5>
-              <p>
-                Aize er ett nyopprettet softwareselsakp. De har en plattform for
-                digitale tvillinger, der jeg og Truls
-              </p>
-              <p>
-                På høyresiden har vi constructability engine, validerer en
-                3D-modell mot et sett med regler
-              </p>
-              <p>moder applikasjonen twin-explorer</p>
-              <p>3D vindu for å vise frem modeller</p>
-              <p>
-                Til høyre har vi Constructability Engine levert fra mitt team
-              </p>
-              <p>VIS FREM HIGHLIGHTING</p>
-              <p>
-                Micro frontend kommuniserer med en 3D-modell gjennom moder
-                applikasjonen
-              </p>
-              <p>Nå skal vi prate med dere om hvordan vi kom hit</p>
-            </aside>
-          </section>
-        </section>
-        <section data-background-image="./3.jpg">
-          <section
-            data-markdown="hva_er_microfrontends.md"
-            data-separator="^=new slide="
-            data-separator-vertical="^=vertical slide="
-            data-separator-notes="^Note:"
-            data-charset="utf8"
-          ></section>
-        </section>
-        <!-- TEKNOLOGISK RETNING -->
-        <section
-          data-background-image="./4.jpg"
-          data-external="slides/teknologisk_retning.html"
-          data-charset="utf8"
-        ></section>
-        <section data-background-image="./5.jpg">
-          <section>
-            <h1>Demo<span class="dot">.</span></h1>
-          </section>
-          <section
-            data-markdown="mini_demo.md"
-            data-separator="^=new slide="
-            data-separator-vertical="^=vertical slide="
-            data-separator-notes="^Note:"
-            data-charset="utf8"
-          ></section>
-          <section>
-            <micro-ftw></micro-ftw>
-          </section>
-        </section>
-        <!-- STØRRE DEMO -->
-        <section
-          data-background-image="./6.jpg"
-          data-charset="utf8"
-          data-external="slides/storre_demo.html"
-        ></section>
-        <!-- TEKNISKE GOTCHAS -->
-        <section
-          data-background-image="./7.jpg"
-          data-external="slides/tekniske_gotchas.html"
-        ></section>
-        <section data-background-image="./8.jpg">
-          <section
-            data-markdown="organisatoriske_gotchas.md"
-            data-separator="^=new slide="
-            data-separator-vertical="^=vertical slide="
-            data-separator-notes="^Note:"
-            data-charset="utf8"
-          ></section>
-        </section>
-        <section data-background-image="./8.jpg">
-          <section
-            data-markdown="oppsummering.md"
-            data-separator="^=new slide="
-            data-separator-vertical="^=vertical slide="
-            data-separator-notes="^Note:"
-            data-charset="utf8"
-          ></section>
-        </section>
-      </div>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- INTRODUKSJON -->
+            <section data-charset="utf8" data-external="slides/introduksjon.html" data-background-image="./1.jpg">
+            </section>
+
+            <!-- DEMOGRAFI -->
+            <section data-charset="utf8" data-external="slides/demografi.html" data-background-image="./2.jpg">
+            </section>
+
+            <!-- DET STORE BILDET -->
+            <section data-charset="utf8" data-external="slides/det_store_bildet.html" data-background-image="./3.jpg">
+            </section>
+
+            <!-- TILFREDSHET -->
+            <section data-charset="utf8" data-external="slides/tilfredshet.html" data-background-image="./4.jpg">
+            </section>
+
+            <!-- TILFREDSHET -->
+            <section data-charset="utf8" data-external="slides/storrelse.html" data-background-image="./5.jpg">
+            </section>
+
+            <!-- ALVORSPRAT -->
+            <section data-charset="utf8" data-external="slides/alvor.html" data-background-image="./6.jpg">
+            </section>
+        </div>
     </div>
 
-    <script src="http://localhost:8001/micro-ftw.js"></script>
     <script src="dist/reveal.js"></script>
+    <script src="plugin/chart/plugin.js"></script>
+    <script src="node_modules/chart.js/dist/chart.min.js"></script>
     <script src="plugin/notes/notes.js"></script>
     <script src="plugin/markdown/markdown.js"></script>
-    <script type="text/javascript">
-      window.process = {
-        env: {
-          NODE_DEBUG: "something",
-        },
-      };
-    </script>
-    <script
-      src="http://localhost:4201/webcomponent.js"
-      type="text/javascript"
-    ></script>
     <script src="plugin/highlight/highlight.js"></script>
     <script>
-      // More info about initialization & config:
-      // - https://revealjs.com/initialization/
-      // - https://revealjs.com/config/
-      Reveal.initialize({
-        hash: true,
-
-        // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-        dependencies: [
-          { src: "plugin/tagcloud/tagcloud.js", async: true },
-          {
-            src: "plugin/external/external.js",
-            condition: function () {
-              return !!document.querySelector("[data-external]");
+     function makeColorList(transparency) {
+       if (!transparency) {
+         transparency = "1";
+       }
+       const colorList = ["37,106,156", "170,79,200", "217,89,56", "50,168,218", "214,82,174", "235,128,65", "57,198, 227", "230,89,138", "234,154,74", "64,226,189", "237,165,144"];
+       const secondColorList = ["112,62,187", "170,79,200", "214,82,174", "230,89,138", "237,165,144"]
+       return colorList.map(color => `rgba(${color},${transparency})`);
+     }
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            chart: {
+                defaults: {
+                    color: 'lightgray', // color of labels
+                    scale: {
+                        beginAtZero: true,
+                        ticks: { stepSize: 1 },
+                        grid: { color: "lightgray" }, // color of grid lines
+                    },
+                },
+                line: { borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"], "borderDash": [[5, 10], [0, 0]] },
+                bar: { backgroundColor: [makeColorList("0.8")] },
+                pie: { backgroundColor: [makeColorList("1")] },
             },
-          },
-        ],
-      });
+            // ...
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealChart],
+            dependencies: [
+                { src: "plugin/tagcloud/tagcloud.js", async: true },
+                {
+                    src: "plugin/external/external.js",
+                    condition: function () {
+                        return !!document.querySelector("[data-external]");
+                    },
+                },
+            ],
+        });
     </script>
 
-    <script type="text/javascript">
-      const constructabilityTagName = "constructability-engine";
-      let constructabilityToggled = false;
-      function openConstructability() {
-        let target = document.getElementById("constructability-target");
-        let element = window.customElements.get(constructabilityTagName);
-        target.appendChild(new element());
-        setTimeout(() => {
-          toggleConstructability();
-        }, 30000);
-        constructabilityToggled = true;
-      }
-
-      function removeConstructability() {
-        const elements = document
-          .getElementsByTagName(constructabilityTagName)[0]
-          .remove();
-        constructabilityToggled = false;
-      }
-
-      function toggleConstructability() {
-        if (constructabilityToggled) {
-          removeConstructability();
-          return;
-        }
-        openConstructability();
-      }
-    </script>
     <div class="alvlogo">
-      <embed
-        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjYsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxOTkuMTggMTE0LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE5OS4xOCAxMTQuNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6dXJsKCNTVkdJRF8xXyk7fQ0KCS5zdDF7ZmlsbDp1cmwoI1NWR0lEXzJfKTt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfMV8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iNDMuMjM4OCIgeTE9IjY5LjE2ODYiIHgyPSIxMjkuNjk2OCIgeTI9IjQ0LjYyNCI+DQoJCTxzdG9wICBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkZGRkYiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC4yMzk0IiBzdHlsZT0ic3RvcC1jb2xvcjojRkRGREZEO3N0b3Atb3BhY2l0eTowLjk1NTIiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC4zNTciIHN0eWxlPSJzdG9wLWNvbG9yOiNGNUY1RjU7c3RvcC1vcGFjaXR5OjAuOTMzMiIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjQ0ODEiIHN0eWxlPSJzdG9wLWNvbG9yOiNFOEU4RTg7c3RvcC1vcGFjaXR5OjAuOTE2MSIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjUyNTUiIHN0eWxlPSJzdG9wLWNvbG9yOiNENUQ1RDU7c3RvcC1vcGFjaXR5OjAuOTAxNiIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjU5NDMiIHN0eWxlPSJzdG9wLWNvbG9yOiNCREJEQkQ7c3RvcC1vcGFjaXR5OjAuODg4NyIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjY1NyIgc3R5bGU9InN0b3AtY29sb3I6IzlGOUY5RjtzdG9wLW9wYWNpdHk6MC44NzciLz4NCgkJPHN0b3AgIG9mZnNldD0iMC43MTUxIiBzdHlsZT0ic3RvcC1jb2xvcjojN0M3QzdDO3N0b3Atb3BhY2l0eTowLjg2NjEiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC43Njk1IiBzdHlsZT0ic3RvcC1jb2xvcjojNTI1MjUyO3N0b3Atb3BhY2l0eTowLjg1NTkiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC44MTkiIHN0eWxlPSJzdG9wLWNvbG9yOiMyNTI1MjU7c3RvcC1vcGFjaXR5OjAuODQ2NiIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjg1NDUiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDAwMDA7c3RvcC1vcGFjaXR5OjAuODQiLz4NCgk8L2xpbmVhckdyYWRpZW50Pg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzAuNDEsMTE0LjM2Yy0zLjI2LTkuNTYtNi41My0xOS4xMS05Ljc5LTI4LjY3Yy03LDAtMTQtMC4wMS0yMS0wLjAxQzg5LjksNTcuMTIsODAuMTgsMjguNTYsNzAuNDYsMA0KCQlDNjAuNDksMCw1MC41MSwwLDQwLjU0LDBjMTMuMDIsMzguMTMsMjYuMDUsNzYuMjcsMzkuMDcsMTE0LjRDOTYuNTQsMTE0LjM4LDExMy40OCwxMTQuMzcsMTMwLjQxLDExNC4zNnoiLz4NCgk8bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzJfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjE3LjgxODIiIHkxPSI1OC44OTM2IiB4Mj0iODUuMjcxMiIgeTI9IjUxLjkzMTUiPg0KCQk8c3RvcCAgb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojRkZGRkZGIi8+DQoJCTxzdG9wICBvZmZzZXQ9IjAuMDcyOCIgc3R5bGU9InN0b3AtY29sb3I6I0Y5RjlGOTtzdG9wLW9wYWNpdHk6MC45ODU0Ii8+DQoJCTxzdG9wICBvZmZzZXQ9IjAuMTczIiBzdHlsZT0ic3RvcC1jb2xvcjojRTdFN0U3O3N0b3Atb3BhY2l0eTowLjk2NTIiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC4yODkyIiBzdHlsZT0ic3RvcC1jb2xvcjojQ0FDQUNBO3N0b3Atb3BhY2l0eTowLjk0MTkiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC40MTc0IiBzdHlsZT0ic3RvcC1jb2xvcjojQTFBMUExO3N0b3Atb3BhY2l0eTowLjkxNjIiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC41NTU0IiBzdHlsZT0ic3RvcC1jb2xvcjojNkQ2RDZEO3N0b3Atb3BhY2l0eTowLjg4ODQiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC42OTkzIiBzdHlsZT0ic3RvcC1jb2xvcjojMkYyRjJGO3N0b3Atb3BhY2l0eTowLjg1OTUiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC43OTY1IiBzdHlsZT0ic3RvcC1jb2xvcjojMDAwMDAwO3N0b3Atb3BhY2l0eTowLjg0Ii8+DQoJPC9saW5lYXJHcmFkaWVudD4NCgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNDAuNTQsMGMtMC41MywwLTEuMDcsMC0xLjYsMEMyNS45NiwzOC4xMywxMi45OCw3Ni4yNiwwLDExNC4zOGM5Ljk0LDAsMTkuODctMC4wMSwyOS44MS0wLjAxDQoJCWMzLjkzLTExLjUxLDcuODYtMjMuMDMsMTEuNzktMzQuNTRjOC43MywwLDE3LjQ3LDAsMjYuMjEtMC4wMUM1OC43Miw1My4yMiw0OS42MywyNi42MSw0MC41NCwweiIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xOTkuMTgtMC4wMkMxODkuMTktMC4wMSwxNzkuMiwwLDE2OS4yMSwwYy03Ljk5LDIzLjQ3LTE1Ljk4LDQ2Ljk0LTIzLjk3LDcwLjQyDQoJCUMxMzcuMjQsNDYuOTUsMTI5LjI1LDIzLjQ3LDEyMS4yNiwwYy05Ljk4LDAtMTkuOTcsMC0yOS45NSwwYzEzLjA0LDM4LjEzLDI2LjA4LDc2LjI3LDM5LjEzLDExNC40DQoJCWM5Ljg5LTAuMDEsMTkuNzgtMC4wMSwyOS42Ny0wLjAyYzMuMzctOS43OCw2Ljc1LTE5LjU2LDEwLjEyLTI5LjM0aC0wLjA5QzE3OS44MSw1Ni42OCwxODkuNSwyOC4zMywxOTkuMTgtMC4wMnoiLz4NCjwvZz4NCjwvc3ZnPg0K"
-        alt="Alv logo"
-      />
+        <embed
+            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjYsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxOTkuMTggMTE0LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE5OS4xOCAxMTQuNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6dXJsKCNTVkdJRF8xXyk7fQ0KCS5zdDF7ZmlsbDp1cmwoI1NWR0lEXzJfKTt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfMV8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iNDMuMjM4OCIgeTE9IjY5LjE2ODYiIHgyPSIxMjkuNjk2OCIgeTI9IjQ0LjYyNCI+DQoJCTxzdG9wICBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkZGRkYiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC4yMzk0IiBzdHlsZT0ic3RvcC1jb2xvcjojRkRGREZEO3N0b3Atb3BhY2l0eTowLjk1NTIiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC4zNTciIHN0eWxlPSJzdG9wLWNvbG9yOiNGNUY1RjU7c3RvcC1vcGFjaXR5OjAuOTMzMiIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjQ0ODEiIHN0eWxlPSJzdG9wLWNvbG9yOiNFOEU4RTg7c3RvcC1vcGFjaXR5OjAuOTE2MSIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjUyNTUiIHN0eWxlPSJzdG9wLWNvbG9yOiNENUQ1RDU7c3RvcC1vcGFjaXR5OjAuOTAxNiIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjU5NDMiIHN0eWxlPSJzdG9wLWNvbG9yOiNCREJEQkQ7c3RvcC1vcGFjaXR5OjAuODg4NyIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjY1NyIgc3R5bGU9InN0b3AtY29sb3I6IzlGOUY5RjtzdG9wLW9wYWNpdHk6MC44NzciLz4NCgkJPHN0b3AgIG9mZnNldD0iMC43MTUxIiBzdHlsZT0ic3RvcC1jb2xvcjojN0M3QzdDO3N0b3Atb3BhY2l0eTowLjg2NjEiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC43Njk1IiBzdHlsZT0ic3RvcC1jb2xvcjojNTI1MjUyO3N0b3Atb3BhY2l0eTowLjg1NTkiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC44MTkiIHN0eWxlPSJzdG9wLWNvbG9yOiMyNTI1MjU7c3RvcC1vcGFjaXR5OjAuODQ2NiIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjg1NDUiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDAwMDA7c3RvcC1vcGFjaXR5OjAuODQiLz4NCgk8L2xpbmVhckdyYWRpZW50Pg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzAuNDEsMTE0LjM2Yy0zLjI2LTkuNTYtNi41My0xOS4xMS05Ljc5LTI4LjY3Yy03LDAtMTQtMC4wMS0yMS0wLjAxQzg5LjksNTcuMTIsODAuMTgsMjguNTYsNzAuNDYsMA0KCQlDNjAuNDksMCw1MC41MSwwLDQwLjU0LDBjMTMuMDIsMzguMTMsMjYuMDUsNzYuMjcsMzkuMDcsMTE0LjRDOTYuNTQsMTE0LjM4LDExMy40OCwxMTQuMzcsMTMwLjQxLDExNC4zNnoiLz4NCgk8bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzJfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjE3LjgxODIiIHkxPSI1OC44OTM2IiB4Mj0iODUuMjcxMiIgeTI9IjUxLjkzMTUiPg0KCQk8c3RvcCAgb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojRkZGRkZGIi8+DQoJCTxzdG9wICBvZmZzZXQ9IjAuMDcyOCIgc3R5bGU9InN0b3AtY29sb3I6I0Y5RjlGOTtzdG9wLW9wYWNpdHk6MC45ODU0Ii8+DQoJCTxzdG9wICBvZmZzZXQ9IjAuMTczIiBzdHlsZT0ic3RvcC1jb2xvcjojRTdFN0U3O3N0b3Atb3BhY2l0eTowLjk2NTIiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC4yODkyIiBzdHlsZT0ic3RvcC1jb2xvcjojQ0FDQUNBO3N0b3Atb3BhY2l0eTowLjk0MTkiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC40MTc0IiBzdHlsZT0ic3RvcC1jb2xvcjojQTFBMUExO3N0b3Atb3BhY2l0eTowLjkxNjIiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC41NTU0IiBzdHlsZT0ic3RvcC1jb2xvcjojNkQ2RDZEO3N0b3Atb3BhY2l0eTowLjg4ODQiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC42OTkzIiBzdHlsZT0ic3RvcC1jb2xvcjojMkYyRjJGO3N0b3Atb3BhY2l0eTowLjg1OTUiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC43OTY1IiBzdHlsZT0ic3RvcC1jb2xvcjojMDAwMDAwO3N0b3Atb3BhY2l0eTowLjg0Ii8+DQoJPC9saW5lYXJHcmFkaWVudD4NCgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNDAuNTQsMGMtMC41MywwLTEuMDcsMC0xLjYsMEMyNS45NiwzOC4xMywxMi45OCw3Ni4yNiwwLDExNC4zOGM5Ljk0LDAsMTkuODctMC4wMSwyOS44MS0wLjAxDQoJCWMzLjkzLTExLjUxLDcuODYtMjMuMDMsMTEuNzktMzQuNTRjOC43MywwLDE3LjQ3LDAsMjYuMjEtMC4wMUM1OC43Miw1My4yMiw0OS42MywyNi42MSw0MC41NCwweiIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xOTkuMTgtMC4wMkMxODkuMTktMC4wMSwxNzkuMiwwLDE2OS4yMSwwYy03Ljk5LDIzLjQ3LTE1Ljk4LDQ2Ljk0LTIzLjk3LDcwLjQyDQoJCUMxMzcuMjQsNDYuOTUsMTI5LjI1LDIzLjQ3LDEyMS4yNiwwYy05Ljk4LDAtMTkuOTcsMC0yOS45NSwwYzEzLjA0LDM4LjEzLDI2LjA4LDc2LjI3LDM5LjEzLDExNC40DQoJCWM5Ljg5LTAuMDEsMTkuNzgtMC4wMSwyOS42Ny0wLjAyYzMuMzctOS43OCw2Ljc1LTE5LjU2LDEwLjEyLTI5LjM0aC0wLjA5QzE3OS44MSw1Ni42OCwxODkuNSwyOC4zMywxOTkuMTgtMC4wMnoiLz4NCjwvZz4NCjwvc3ZnPg0K"
+            alt="Alv logo" />
     </div>
-    <script type="text/javascript">
-      class Test extends HTMLElement {
-        constructor() {
-          super();
-          const shadowRoot = this.attachShadow({ mode: "open" });
-          shadowRoot.innerHTML = `
-        <style>
+    <script type="text/javascript" src="https://kode24.azurewebsites.net/main.js"></script>
+</body>
 
-          :host {
-            --p-color: blue;
-          }
-
-					:host p {
-          	color: red;
-          }
-
-          p {
-            color: var(--p-color);
-          }
-        </style>
-        <p>Yay! I have color</p>
-      `;
-        }
-      }
-
-      customElements.define("test-element", Test);
-    </script>
-  </body>
 </html>
